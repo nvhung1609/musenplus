@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>MUSEN PLUS IoT – Giải pháp IoT &amp; Tự động hoá</title>
+  <meta
+    content="Giải pháp IoT, AIoT, SCADA, nông nghiệp thông minh, toà nhà thông minh, quan trắc môi trường, sản phẩm phần cứng &amp; phần mềm theo yêu cầu."
+    name="description" />
+  <meta content="#0ea5e9" name="theme-color" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Top Header -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <!-- Logo -->
+      <div class="top-header-logo">
+        <a aria-label="Trang chủ" class="logo" data-i18n-aria-label="nav.home_aria" href="#">
+          <img alt="Logo MUSEN PLUS IoT" class="logo-mark" src="image/logo.png" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+      <!-- Award Carousel -->
+      <div class="top-award">
+        <div class="award-carousel" id="awardCarousel">
+        </div>
+      </div>
+      <!-- Top Header Menu -->
+      <div class="top-header-menu">
+        <!-- Hotline -->
+        <a href="tel:0338812063" title="Hotline hỗ trợ 24/7">
+          <i class="fa fa-envelope"></i> musenplus2@gmail.com
+          <i class="fa fa-phone"></i> 0338812063
+        </a>
+        <!-- Notifications -->
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo của bạn">
+            <i class="fa fa-bell"></i>
+            <span class="notifications-length">9</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header">
+              <strong>Chương trình khuyến mãi</strong>
+            </div>
+            <div class="notifications-item">
+              <a href="#" target="_blank">
+                <i class="fa fa-gift"></i>
+                <div class="notifications-content">
+                  <div class="ntfct-header">
+                    <strong>Ưu đãi 30% Cloud Server cài sẵn nền tảng n8n</strong>
+                  </div>
+                  <img alt="Cloud Server"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPk5OPC90ZXh0Pgo8L3N2Zz4K" />
+                </div>
+              </a>
+            </div>
+            <div class="notifications-item">
+              <a href="#" target="_blank">
+                <i class="fa fa-shield"></i>
+                <div class="notifications-content">
+                  <div class="ntfct-header">
+                    <strong>MUSEN PLUS ra mắt OneShield - Bộ giải pháp bảo mật</strong>
+                  </div>
+                  <img alt="OneShield"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPk9TPC90ZXh0Pgo8L3N2Zz4K" />
+                </div>
+              </a>
+            </div>
+            <div class="notifications-item">
+              <a href="#" target="_blank">
+                <i class="fa fa-robot"></i>
+                <div class="notifications-content">
+                  <div class="ntfct-header">
+                    <strong>MUSEN PLUS Ra Mắt Dịch Vụ Web AI</strong>
+                  </div>
+                  <img alt="Web AI"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkFJPC90ZXh0Pgo8L3N2Zz4K" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Login -->
+        <a href="#" title="Đăng nhập">
+          <i class="fa fa-user"></i> Đăng nhập
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <nav aria-label="Chính" class="menu" data-i18n-aria-label="nav.main_aria">
+        <!-- Trang chủ -->
+        <a href="#" id="nav-home">
+          <i class="fa fa-home"></i>
+        </a>
+        <!-- Dịch vụ -->
+        <div class="menu-item">
+          <a data-i18n="nav.services" href="#dich-vu" id="nav-services">Dịch vụ</a>
+          <div class="submenu">
+            <div class="submenu-content">
+              <div class="submenu-section">
+                <h4>Dịch vụ IoT</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">📡</div>
+                    <div class="submenu-item-content">
+                      <h5>Thiết kế phần cứng</h5>
+                      <p>ESP32, STM32, LoRa, NB-IoT, RS485, Modbus, CAN...</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">☁️</div>
+                    <div class="submenu-item-content">
+                      <h5>Cloud &amp; Dashboard</h5>
+                      <p>MQTT/HTTP, realtime data, SCADA web, cảnh báo.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🧠</div>
+                    <div class="submenu-item-content">
+                      <h5>AIoT &amp; Edge</h5>
+                      <p>AI camera, nhận diện, phân tích biên, automation.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Giải pháp -->
+        <div class="menu-item">
+          <a data-i18n="nav.solutions" href="#giai-phap" id="nav-solutions">Giải pháp</a>
+          <div class="submenu">
+            <div class="submenu-content">
+              <div class="submenu-section">
+                <h4>Ngành &amp; lĩnh vực</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🌾</div>
+                    <div class="submenu-item-content">
+                      <h5>Nông nghiệp thông minh</h5>
+                      <p>Quan trắc pH, DO, EC, tưới tự động, dashboard IoT.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏢</div>
+                    <div class="submenu-item-content">
+                      <h5>Toà nhà &amp; Năng lượng</h5>
+                      <p>BMS, EMS, tiết kiệm điện, quản lý năng lượng thông minh.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏭</div>
+                    <div class="submenu-item-content">
+                      <h5>Công nghiệp &amp; Môi trường</h5>
+                      <p>Quan trắc khí, nước, giám sát dây chuyền, cảnh báo tự động.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm -->
+        <div class="menu-item">
+          <a data-i18n="nav.products" href="#san-pham" id="nav-products">Sản phẩm</a>
+          <div class="submenu">
+            <div class="submenu-content">
+              <div class="submenu-section">
+                <h4>Thiết bị phần cứng</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">📶</div>
+                    <div class="submenu-item-content">
+                      <h5>ECO-Gateway</h5>
+                      <p>Gateway IoT đa giao thức 4G/Wi-Fi/Ethernet.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🛰️</div>
+                    <div class="submenu-item-content">
+                      <h5>ECO-Node</h5>
+                      <p>Cảm biến không dây LoRa/NB-IoT: pH, DO, mức nước, nhiệt ẩm.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🤖</div>
+                    <div class="submenu-item-content">
+                      <h5>ECO-Vision</h5>
+                      <p>Camera AI nhận diện người/xe, theo dõi vùng, phân tích hình ảnh.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="submenu-section">
+                <h4>Phần mềm &amp; Cloud</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">☁️</div>
+                    <div class="submenu-item-content">
+                      <h5>Dashboard IoT</h5>
+                      <p>Giao diện quản lý thiết bị và cảnh báo realtime.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🧩</div>
+                    <div class="submenu-item-content">
+                      <h5>SCADA Web</h5>
+                      <p>Giám sát &amp; điều khiển từ xa qua trình duyệt.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dự án -->
+        <div class="menu-item">
+          <a data-i18n="nav.projects" href="#du-an" id="nav-projects">Dự án</a>
+          <div class="submenu">
+            <div class="submenu-content">
+              <div class="submenu-section">
+                <h4>Triển khai tiêu biểu</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🐟</div>
+                    <div class="submenu-item-content">
+                      <h5>Trang trại nuôi tôm IoT</h5>
+                      <p>Quan trắc DO, pH, mức nước và điều khiển bơm/quạt tự động.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏠</div>
+                    <div class="submenu-item-content">
+                      <h5>Nhà kính thông minh</h5>
+                      <p>Giám sát nhiệt độ, độ ẩm, tưới nhỏ giọt, cảnh báo thời tiết.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏭</div>
+                    <div class="submenu-item-content">
+                      <h5>Nhà máy năng lượng</h5>
+                      <p>Giám sát tiêu thụ điện, hệ thống pin mặt trời, điều khiển EMS.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Website -->
+        <div class="menu-item">
+          <a data-i18n="nav.website" href="#" id="nav-website">Giải pháp IoT</a>
+          <div class="submenu">
+            <div class="submenu-content">
+              <div class="submenu-section">
+                <h4>Thiết bị &amp; Hệ thống</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🔧</div>
+                    <div class="submenu-item-content">
+                      <h5>Thiết kế phần cứng</h5>
+                      <p>ESP32, STM32, LoRa, NB-IoT, RS485, Modbus, cảm biến &amp; mạch đo lường.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🌡️</div>
+                    <div class="submenu-item-content">
+                      <h5>Node cảm biến</h5>
+                      <p>Đo pH, DO, EC, nhiệt độ, độ ẩm, mức nước, dòng điện, rung động.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">📡</div>
+                    <div class="submenu-item-content">
+                      <h5>Gateway &amp; Truyền thông</h5>
+                      <p>4G/LTE, Wi-Fi, Ethernet, MQTT/HTTP, Modbus, SCADA, giám sát từ xa.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="submenu-section">
+                <h4>Cloud &amp; AIoT</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">☁️</div>
+                    <div class="submenu-item-content">
+                      <h5>Cloud &amp; Dashboard</h5>
+                      <p>Giao diện SCADA web, realtime data, báo cáo, cảnh báo thông minh.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🧠</div>
+                    <div class="submenu-item-content">
+                      <h5>AIoT &amp; Phân tích biên</h5>
+                      <p>AI camera, nhận diện, phân loại, dự báo năng suất và cảnh báo sớm.</p>
+                      <span class="submenu-tag">Mới</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Liên hệ -->
+        <a data-i18n="nav.contact" href="#lien-he" id="nav-contact">Liên hệ</a>
+      </nav>
+      <div>
+        <button class="cta" data-i18n="nav.consult" id="btn-consult"
+          onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})">Nhận
+          tư vấn</button>
+        <!-- <a id="btn-login" class="cta login-btn" href="#dang-nhap" data-i18n="nav.login">Đăng nhập</a> -->
+        <!-- 🔹 Ô chọn ngôn ngữ kế bên nút Đăng nhập -->
+        <select aria-label="Language" class="lang-select" id="language" onchange="changeLanguage(this.value)">
+          <option value="vi">🇻🇳 VN</option>
+          <option value="en">🇺🇸 EN</option>
+          <option value="jp">🇯🇵 JP</option>
+        </select>
+      </div>
+      <!-- <button class="hamb btn" aria-label="Mở menu" onclick="toggleMobile()" data-i18n-aria-label="nav.open_menu_aria">☰</button> -->
+    </div>
+  </header>
+  <!-- Mobile menu -->
+  <div id="mobileMenu"
+    style="display:none;border-bottom:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.95);backdrop-filter: blur(8px);">
+    <div class="container" style="padding:8px 0 14px;display:grid;gap:8px">
+      <a data-i18n="nav.home" href="#" onclick="toggleMobile()">
+        <i class="fa fa-home"></i>
+      </a>
+      <a data-i18n="nav.services" href="#dich-vu" onclick="toggleMobile()">Dịch vụ</a>
+      <a data-i18n="nav.solutions" href="#giai-phap" onclick="toggleMobile()">Giải pháp</a>
+      <a data-i18n="nav.products" href="#san-pham" onclick="toggleMobile()">Sản phẩm</a>
+      <a data-i18n="nav.projects" href="#du-an" onclick="toggleMobile()">Dự án</a>
+      <a data-i18n="nav.website" href="#" onclick="toggleMobile()">Website</a>
+      <a data-i18n="nav.contact" href="#lien-he" onclick="toggleMobile()">Liên hệ</a>
+    </div>
+  </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <span class="eyebrow fade-up"><span class="dot"></span>
+          <span data-i18n="hero.eyebrow">Tăng tốc chuyển đổi số</span>
+        </span>
+        <h1 class="fade-up" data-i18n="hero.title_html" style="transition-delay:.05s">
+          Giải pháp <span style="color:var(--brand)">IoT</span> &amp; <span style="color:var(--accent)">Tự động
+            hoá</span><br />cho Doanh nghiệp &amp; Nông nghiệp
+        </h1>
+        <p class="lead fade-up" data-i18n="hero.subtitle" style="transition-delay:.1s">
+          Thiết kế – Sản xuất – Tích hợp hệ thống: gateway, cảm biến, cloud, dashboard, SCADA, AIoT. Triển khai nhanh,
+          chi phí tối ưu, bảo hành tận nơi.
+        </p>
+        <div class="hero-actions fade-up" style="transition-delay:.15s">
+          <a class="btn primary" data-i18n="hero.cta_primary" href="#lien-he">Đặt cuộc hẹn</a>
+          <a class="btn" data-i18n="hero.cta_secondary" href="#du-an">Xem dự án</a>
+        </div>
+      </div>
+      <div class="device-card fade-up" style="transition-delay:.2s">
+        <div class="status-row">
+          <span class="chip" data-i18n="hero.status.gateway">Gateway • Online</span>
+          <span class="chip" data-i18n="hero.status.devices" style="background:rgba(16,185,129,.12);
+             border-color:rgba(16,185,129,.35);
+             color:#065f46;">24 thiết bị</span>
+        </div>
+        <div class="device-screen">
+          <div class="chart">
+            <canvas id="iotChart"></canvas>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px">
+            <div class="tile humidity-bg" style="position:relative" title="Độ ẩm đất">
+              <strong data-i18n="hero.cards.humidity.label">Độ ẩm</strong>
+              <span class="chip" data-i18n="hero.cards.humidity.value" id="humidityValue" style="margin:0">62%</span>
+              <canvas id="humidityChart" style="position:absolute;top:0;left:0;width:100%;height:100%"></canvas>
+            </div>
+            <div class="tile temperature-bg" style="position:relative" title="Nhiệt độ chuồng">
+              <strong data-i18n="hero.cards.temp.label">Nhiệt</strong>
+              <span class="chip" data-i18n="hero.cards.temp.value" id="temperatureValue" style="margin:0">29.6°C</span>
+              <canvas id="temperatureChart" style="position:absolute;top:0;left:0;width:100%;height:100%"></canvas>
+            </div>
+            <div class="tile ph-bg" style="position:relative" title="CO2 trong không khí">
+              <strong>CO2</strong>
+              <span class="chip" id="co2Value" style="margin:0">665 ppm</span>
+              <canvas id="co2Chart" style="position:absolute;top:0;left:0;width:100%;height:100%"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section id="dich-vu">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="services.title">Dịch vụ cốt lõi</h2>
+        <p class="muted" data-i18n="services.subtitle">Từ ý tưởng → nguyên mẫu → sản xuất → vận hành</p>
+      </div>
+      <div class="cards">
+        <div class="card fade-up">
+          <div aria-hidden="true" class="icon">📡</div>
+          <h3 data-i18n="services.items.hw.title">Thiết kế phần cứng</h3>
+          <p class="muted" data-i18n="services.items.hw.desc">ESP32/STM32, LoRa/4G/5G, NB-IoT, RS485, Modbus, CAN, đo
+            lường công nghiệp.</p>
+        </div>
+        <div class="card fade-up" style="transition-delay:.05s">
+          <div class="icon">🧠</div>
+          <h3 data-i18n="services.items.edge.title">AIoT &amp; Edge</h3>
+          <p class="muted" data-i18n="services.items.edge.desc">Nhận dạng hình ảnh, phát hiện người/xe, giám sát an
+            ninh, phân tích biên.</p>
+        </div>
+        <div class="card fade-up" style="transition-delay:.1s">
+          <div class="icon">☁️</div>
+          <h3 data-i18n="services.items.cloud.title">Cloud &amp; Dashboard</h3>
+          <p class="muted" data-i18n="services.items.cloud.desc">MQTT/HTTP, dữ liệu thời gian thực, cảnh báo, báo cáo,
+            SCADA web.</p>
+        </div>
+        <div class="card fade-up" style="transition-delay:.15s">
+          <div class="icon">🔧</div>
+          <h3 data-i18n="services.items.integr.title">Tích hợp hệ thống</h3>
+          <p class="muted" data-i18n="services.items.integr.desc">PLC/SCADA, BMS/EMS, toà nhà thông minh, cổng kết nối
+            đa giao thức.</p>
+        </div>
+        <div class="card fade-up" style="transition-delay:.2s">
+          <div class="icon">🧪</div>
+          <h3 data-i18n="services.items.proto.title">Prototype nhanh</h3>
+          <p class="muted" data-i18n="services.items.proto.desc">In 3D, CNC, PCB nhanh, thử nghiệm hiện trường, tinh
+            chỉnh theo yêu cầu.</p>
+        </div>
+        <div class="card fade-up" style="transition-delay:.25s">
+          <div class="icon">🛡️</div>
+          <h3 data-i18n="services.items.sla.title">Bảo trì &amp; SLA</h3>
+          <p class="muted" data-i18n="services.items.sla.desc">Giám sát từ xa, cập nhật OTA, bảo hành tận nơi, cam kết
+            dịch vụ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions / Showcase -->
+  <section id="giai-phap">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="solutions.title">Giải pháp tiêu biểu</h2>
+        <p class="muted" data-i18n="solutions.subtitle">Nông nghiệp thông minh • Toà nhà • Quan trắc môi trường • Công
+          nghiệp</p>
+      </div>
+      <div class="showcase">
+        <div class="panel fade-up">
+          <h3 data-i18n="solutions.agri.title">Nông nghiệp thông minh</h3>
+          <p class="muted" data-i18n="solutions.agri.desc">Giám sát pH/DO/EC, nhiệt độ, độ ẩm, mức nước; điều khiển
+            bơm/quạt/van tự động; dashboard &amp; cảnh báo SMS/Zalo.</p>
+          <div class="grid-3" style="margin-top:12px">
+            <div class="tile farm-bg"><span data-i18n="solutions.agri.tiles.farm">Trại tôm</span><span class="chip"
+                data-i18n="solutions.agri.tiles.farm_val">42 ao</span></div>
+            <div class="tile greenhouse-bg"><span data-i18n="solutions.agri.tiles.greenhouse">Nhà kính</span><span
+                class="chip" data-i18n="solutions.agri.tiles.greenhouse_val">6 khu</span></div>
+            <div class="tile drip-bg"><span data-i18n="solutions.agri.tiles.drip">Tưới nhỏ giọt</span><span class="chip"
+                data-i18n="solutions.agri.tiles.drip_val">IoT</span></div>
+          </div>
+        </div>
+        <div class="panel fade-up">
+          <h3 data-i18n="solutions.building.title">Toà nhà &amp; Năng lượng</h3>
+          <p class="muted" data-i18n="solutions.agri.desc">Giám sát pH/DO/EC, nhiệt độ, độ ẩm, mức nước; điều khiển
+            bơm/quạt/van tự động; dashboard &amp; cảnh báo SMS/Zalo.</p>
+          <div style="margin-top:12px; display: flex; gap:12px">
+            <div class="tile building-bg" style="flex:1"><span>BMS/EMS</span><span class="chip">Smart</span></div>
+            <div class="tile energy-bg" style="flex:1"><span>Energy</span><span class="chip">IoT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products -->
+  <section id="san-pham">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="products.title">Sản phẩm</h2>
+        <a class="btn" data-i18n="products.catalog" href="#">Tải catalogue</a>
+      </div>
+      <div class="cards">
+        <div class="card fade-up">
+          <h3 data-i18n="products.gw.title">ECO-Gateway</h3>
+          <p class="muted" data-i18n="products.gw.desc"
+            title="Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.">Gateway IoT đa
+            giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.</p>
+          <div class="tile gw-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.gw.img">Ảnh minh
+              hoạ</span><span class="chip" data-i18n="products.gw.tag">v1.2</span></div>
+        </div>
+        <div class="card fade-up" style="transition-delay:.05s">
+          <h3 data-i18n="products.node.title">ECO-Node</h3>
+          <p class="muted" data-i18n="products.node.desc"
+            title="Cảm biến không dây LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.">Cảm biến không dây
+            LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.</p>
+          <div class="tile node-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.node.img">Ảnh
+              minh hoạ</span><span class="chip" data-i18n="products.node.tag">IP65</span></div>
+        </div>
+        <div class="card fade-up" style="transition-delay:.1s">
+          <h3 data-i18n="products.vision.title">ECO-Vision</h3>
+          <p class="muted" data-i18n="products.vision.desc"
+            title="Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.">Hệ thống camera AI nhận
+            diện người/xe, theo dõi vùng cấm, đếm lưu lượng.</p>
+          <div class="tile vision-bg" style="aspect-ratio:16/9;margin-top:10px"><span
+              data-i18n="products.vision.img">Ảnh minh hoạ</span><span class="chip"
+              data-i18n="products.vision.tag">AIoT</span></div>
+        </div>
+        <div class="card fade-up">
+          <h3 data-i18n="products.gw.title">ECO-Gateway</h3>
+          <p class="muted" data-i18n="products.gw.desc"
+            title="Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.">Gateway IoT đa
+            giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.</p>
+          <div class="tile gw-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.gw.img">Ảnh minh
+              hoạ</span><span class="chip" data-i18n="products.gw.tag">v1.2</span></div>
+        </div>
+        <div class="card fade-up" style="transition-delay:.05s">
+          <h3 data-i18n="products.node.title">ECO-Node</h3>
+          <p class="muted" data-i18n="products.node.desc"
+            title="Cảm biến không dây LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.">Cảm biến không dây
+            LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.</p>
+          <div class="tile node-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.node.img">Ảnh
+              minh hoạ</span><span class="chip" data-i18n="products.node.tag">IP65</span></div>
+        </div>
+        <div class="card fade-up" style="transition-delay:.1s">
+          <h3 data-i18n="products.vision.title">ECO-Vision</h3>
+          <p class="muted" data-i18n="products.vision.desc"
+            title="Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.">Hệ thống camera AI nhận
+            diện người/xe, theo dõi vùng cấm, đếm lưu lượng.</p>
+          <div class="tile vision-bg" style="aspect-ratio:16/9;margin-top:10px"><span
+              data-i18n="products.vision.img">Ảnh minh hoạ</span><span class="chip"
+              data-i18n="products.vision.tag">AIoT</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects / Stats -->
+  <section id="du-an">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="projects.title">Dự án đã triển khai</h2>
+        <p class="muted" data-i18n="projects.subtitle">Một vài con số biết nói</p>
+      </div>
+      <div class="stats">
+        <div class="stat fade-up">
+          <div class="big" data-i18n="projects.stats.sites.value">120+</div>
+          <div class="muted" data-i18n="projects.stats.sites.label">Site IoT đang hoạt động</div>
+        </div>
+        <div class="stat fade-up" style="transition-delay:.05s">
+          <div class="big" data-i18n="projects.stats.sectors.value">5+</div>
+          <div class="muted" data-i18n="projects.stats.sectors.label">Lĩnh vực công nghiệp</div>
+        </div>
+        <div class="stat fade-up" style="transition-delay:.1s">
+          <div class="big" data-i18n="projects.stats.energy.value">30%</div>
+          <div class="muted" data-i18n="projects.stats.energy.label">Tiết kiệm năng lượng TB</div>
+        </div>
+        <div class="stat fade-up" style="transition-delay:.15s">
+          <div class="big" data-i18n="projects.stats.monitor.value">24/7</div>
+          <div class="muted" data-i18n="projects.stats.monitor.label">Giám sát &amp; cảnh báo</div>
+        </div>
+      </div>
+      <div style="height:16px"></div>
+    </div>
+  </section>
+  <section id="tech-platforms">
+    <div class="container">
+      <div class="section-head">
+<h2 data-i18n="platform.title">Nền tảng & Công nghệ Musen Plus</h2>
+<p data-i18n="platform.subtitle">Các hệ sinh thái phần mềm, phần cứng và giao thức mà Musen Plus hỗ trợ.</p>
+      </div>
+
+      <div class="tech-grid">
+
+        <!-- OS -->
+        <div class="tech-column">
+          <h3>OS</h3>
+          <div class="logo-grid">
+            <img class="tech-logo" alt="Android" src="./image/tech/OS/android.png">
+            <img class="tech-logo" alt="Yocto" src="./image/tech/OS/yocto.png">
+            <img class="tech-logo" alt="Debian" src="./image/tech/OS/debian.png">
+            <img class="tech-logo" alt="Ubuntu" src="./image/tech/OS/ubuntu.png">
+            <img class="tech-logo" alt="OpenWRT" src="./image/tech/OS/openwrt.png">
+            <img class="tech-logo" alt="FreeRTOS" src="./image/tech/OS/freertos.png">
+          </div>
+        </div>
+
+        <!-- Chip Platform -->
+        <div class="tech-column">
+          <h3>Chip Platform</h3>
+          <div class="logo-grid" style="gap: 8px 10px;">
+            <img class="tech-logo1" alt="TI" src="./image/tech/chip/ti.png">
+            <img class="tech-logo1" alt="STMicroelectronics" src="./image/tech/chip/stm.png">
+            <img class="tech-logo1" alt="Microchip" src="./image/tech/chip/microchip.png">
+            <img class="tech-logo1" alt="Rockchip" src="./image/tech/chip/rockchip.png">
+            <img class="tech-logo1" alt="NXP" src="./image/tech/chip/nxp.png">
+            <img class="tech-logo1" alt="MediaTek" src="./image/tech/chip/mediatek.png">
+            <img class="tech-logo1" alt="Espressif" src="./image/tech/chip/espressif.png">
+            <img class="tech-logo1" alt="Silicon Labs" src="./image/tech/chip/silicon_labs.png">
+            <img class="tech-logo1" alt="Nordic" src="./image/tech/chip/nordic.png">
+          </div>
+        </div>
+        <!-- Language -->
+        <div class="tech-column">
+          <h3>Language</h3>
+          <div class="logo-grid">
+            <img class="tech-logo" alt="C" src="./image/tech/Language/c.png">
+            <img class="tech-logo" alt="C++" src="./image/tech/Language/c++.png">
+            <img class="tech-logo" alt="Node.js" src="./image/tech/Language/node.png">
+            <img class="tech-logo" alt="Python" src="./image/tech/Language/python.png">
+            <img class="tech-logo" alt="Java" src="./image/tech/Language/java.png">
+          </div>
+        </div>
+
+        <!-- Protocols -->
+        <div class="tech-column">
+          <h3>Protocols</h3>
+          <div class="logo-grid">
+            <img class="tech-logo" alt="Zigbee" src="./image/tech/Protocols/zigbee.png">
+            <img class="tech-logo" alt="Z-Wave" src="./image/tech/Protocols/z_wave.png">
+            <img class="tech-logo" alt="LoRaWAN" src="./image/tech/Protocols/lora.png">
+            <img class="tech-logo" alt="LTE" src="./image/tech/Protocols/lte.png">
+            <img class="tech-logo" alt="Modbus" src="./image/tech/Protocols/modbus.png">
+            <img class="tech-logo" alt="Matter" src="./image/tech/Protocols/matter.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fallback loader: nếu src hiện tại lỗi, tự chuyển sang URL tiếp theo trong data-src -->
+  <script>
+    (function () {
+      const imgs = document.querySelectorAll('img.tech-logo');
+      imgs.forEach(img => {
+        const list = (img.dataset.src || '').split('|').map(s => s.trim()).filter(Boolean);
+        let i = 0;
+        function tryNext() {
+          if (i < list.length) img.src = list[i++];
+        }
+        img.addEventListener('error', tryNext, { passive: true });
+        // nếu file local trống/404 => sự kiện error sẽ nhảy sang CDN 1, rồi CDN 2
+      });
+    })();
+  </script>
+
+  <!-- Contact / Lead capture -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div>
+          <h4 data-i18n="contact.title" style="margin:0 0 6px">Cần tư vấn giải pháp cho dự án của bạn?</h4>
+          <p class="muted" data-i18n="contact.subtitle" style="margin:0">Gửi yêu cầu – Chúng tôi phản hồi trong 24 giờ.
+          </p>
+        </div>
+        <form class="input" onsubmit="return submitLead(event)">
+          <input aria-label="Họ tên" data-i18n-aria-label="contact.form.name_aria"
+            data-i18n-placeholder="contact.form.name" id="name" placeholder="Họ tên" required="" type="text" />
+          <input aria-label="Email" data-i18n-aria-label="contact.form.email_aria"
+            data-i18n-placeholder="contact.form.email" id="email" placeholder="Email" required="" type="email" />
+          <input aria-label="Số điện thoại" data-i18n-aria-label="contact.form.phone_aria"
+            data-i18n-placeholder="contact.form.phone" id="phone" placeholder="Số điện thoại (tuỳ chọn)" type="tel" />
+          <button class="cta" data-i18n="contact.form.submit" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT toàn diện – từ thiết bị, gateway đến nền tảng cloud. Ứng dụng cho nông nghiệp, công nghiệp và
+          dịch vụ thông minh.</p>
+      </div>
+      <div>
+        <h4>Nông nghiệp thông minh</h4>
+        <ul>
+          <li>Giám sát môi trường nuôi trồng</li>
+          <li>Tưới tiêu tự động</li>
+          <li>Nhà kính &amp; nhà màng IoT</li>
+          <li>Phân tích dữ liệu năng suất</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghiệp</h4>
+        <ul>
+          <li>Giám sát dây chuyền sản xuất</li>
+          <li>Bảo trì dự đoán</li>
+          <li>Tự động hóa nhà máy</li>
+          <li>Quản lý năng lượng</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dịch vụ</h4>
+        <ul>
+          <li>Quản lý tòa nhà thông minh</li>
+          <li>Giải pháp logistics IoT</li>
+          <li>Giám sát phương tiện</li>
+          <li>Hệ thống cảnh báo an toàn</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer bottom -->
+<div style="text-align:center; margin-top:20px;" class="footer-bottom">
+  <div class="container">
+    <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT cho Nông nghiệp, Công nghiệp và Dịch vụ.</p>
+    
+    <div class="footer-address">
+      51/6/6 Nguyễn Văn Giáp, Phường Bình Trưng Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+    </div>
+
+    <div class="footer-hours">
+      Thời gian hoạt động: Thứ 2 – Thứ 7 (8.30-18.30) Chủ nhật (Closed)
+    </div>
+
+    <div class="footer-contact">
+      <a href="mailto:musenplus2@gmail.com">Email: musenplus2@gmail.com</a>
+      <a href="tel:+84338812063">Hotline: +84 338 812 063</a>
+    </div>
+  </div>
+</div>
+  </footer>
+  <script>
+    // simple appear on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('appear'); io.unobserve(e.target) } })
+    }, { threshold: .12 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+    // mobile menu
+    function toggleMobile() {
+      const m = document.getElementById('mobileMenu');
+      m.style.display = (m.style.display === 'none' || !m.style.display) ? 'block' : 'none';
+    }
+
+    // Top header carousel
+    function initAwardCarousel() {
+      const carousel = document.getElementById('awardCarousel');
+      if (!carousel) return;
+
+      const items = carousel.querySelectorAll('.award-item');
+      if (items.length <= 1) return;
+
+      let currentIndex = 0;
+      const itemWidth = 274; // 254px + 20px gap
+      const visibleItems = Math.floor(carousel.offsetWidth / itemWidth);
+      const maxIndex = Math.max(0, items.length - visibleItems);
+
+      function updateCarousel() {
+        const translateX = -currentIndex * itemWidth;
+        carousel.style.transform = `translateX(${translateX}px)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateCarousel();
+      }
+
+      // Auto-rotate every 3 seconds
+      setInterval(nextSlide, 3000);
+    }
+
+    // Notifications dropdown
+    function toggleNotifications(event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('notificationsDropdown');
+      if (dropdown) {
+        dropdown.classList.toggle('show');
+      }
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+      const notifications = document.querySelector('.notifications');
+      const dropdown = document.getElementById('notificationsDropdown');
+
+      if (notifications && dropdown && !notifications.contains(event.target)) {
+        dropdown.classList.remove('show');
+      }
+    });
+
+    // submenu arrow positioning
+    function updateSubmenuArrow() {
+      const menuItem = document.querySelector('.menu-item');
+      const submenu = document.querySelector('.submenu');
+      const menuLink = menuItem.querySelector('a');
+
+      if (menuItem && submenu && menuLink) {
+        const isMobile = window.innerWidth <= 1024;
+
+        if (isMobile) {
+          // On mobile/tablet, center the arrow
+          submenu.style.setProperty('--arrow-left', '50%');
+        } else {
+          // On desktop, position arrow relative to menu item
+          const menuItemRect = menuItem.getBoundingClientRect();
+          const menuLinkRect = menuLink.getBoundingClientRect();
+
+          // Calculate arrow position relative to the menu item container
+          const arrowPosition = (menuLinkRect.left + menuLinkRect.width / 2) - menuItemRect.left - 8;
+
+          submenu.style.setProperty('--arrow-left', arrowPosition + 'px');
+        }
+      }
+    }
+
+    // Update arrow position on hover
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuItem = document.querySelector('.menu-item');
+      if (menuItem) {
+        menuItem.addEventListener('mouseenter', function () {
+          // Small delay to ensure submenu is visible before calculating position
+          setTimeout(updateSubmenuArrow, 10);
+        });
+        window.addEventListener('resize', function () {
+          // Update arrow position on resize
+          setTimeout(updateSubmenuArrow, 100);
+        });
+      }
+
+      // Initialize top header carousel
+      initAwardCarousel();
+
+      // Initialize IoT Chart
+      initIoTChart();
+
+      // Initialize individual sensor charts
+      initSensorCharts();
+    });
+
+    // Initialize IoT Chart
+    function initIoTChart() {
+      const ctx = document.getElementById('iotChart');
+      if (!ctx) return;
+
+      // Generate time labels (last 24 hours)
+      const timeLabels = [];
+      const now = new Date();
+      for (let i = 23; i >= 0; i--) {
+        const time = new Date(now.getTime() - i * 60 * 60 * 1000);
+        timeLabels.push(time.getHours() + ':00');
+      }
+
+      // Generate realistic IoT sensor data
+      const humidityData = [];
+      const temperatureData = [];
+      const co2Data = [];
+
+      for (let i = 0; i < 24; i++) {
+        // Humidity: 75-80% with some variation
+        humidityData.push(77.5 + Math.sin(i * 0.3) * 2.5 + Math.random() * 1);
+
+        // Temperature: 30-32°C with daily cycle
+        temperatureData.push(31 + Math.sin(i * 0.2) * 1 + Math.random() * 0.5);
+
+        // CO2: 650-680 ppm with slight variation
+        co2Data.push(665 + Math.sin(i * 0.1) * 15 + Math.random() * 5);
+      }
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: timeLabels,
+          datasets: [
+            {
+              label: 'Độ ẩm (%)',
+              data: humidityData,
+              borderColor: '#0066cc',
+              backgroundColor: 'rgba(0, 102, 204, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              pointHoverRadius: 4
+            },
+            {
+              label: 'Nhiệt độ (°C)',
+              data: temperatureData,
+              borderColor: '#dc2626',
+              backgroundColor: 'rgba(220, 38, 38, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              pointHoverRadius: 4
+            },
+            {
+              label: 'CO2 (ppm)',
+              data: co2Data,
+              borderColor: '#ea580c',
+              backgroundColor: 'rgba(234, 88, 12, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              pointHoverRadius: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              display: false
+            },
+            y: {
+              display: false
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index'
+          },
+          elements: {
+            point: {
+              hoverBackgroundColor: '#fff'
+            }
+          }
+        }
+      });
+    }
+
+    // Initialize individual sensor charts
+    function initSensorCharts() {
+      // Humidity Chart
+      const humidityCtx = document.getElementById('humidityChart');
+      if (humidityCtx) {
+        const humidityChart = new Chart(humidityCtx, {
+          type: 'line',
+          data: {
+            labels: Array.from({ length: 12 }, (_, i) => ''),
+            datasets: [{
+              data: generateHumidityData(),
+              borderColor: '#0066cc',
+              backgroundColor: 'rgba(0, 102, 204, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { display: false }, y: { display: false } },
+            interaction: { intersect: false }
+          }
+        });
+
+        // Update humidity data every 5 seconds
+        setInterval(() => {
+          const newData = generateHumidityData();
+          humidityChart.data.datasets[0].data = newData;
+          humidityChart.update('none');
+
+          // Update value display
+          const humidityValue = document.getElementById('humidityValue');
+          if (humidityValue) {
+            humidityValue.textContent = Math.round(newData[newData.length - 1]) + '%';
+          }
+        }, 5000);
+      }
+
+      // Temperature Chart
+      const temperatureCtx = document.getElementById('temperatureChart');
+      if (temperatureCtx) {
+        const temperatureChart = new Chart(temperatureCtx, {
+          type: 'line',
+          data: {
+            labels: Array.from({ length: 12 }, (_, i) => ''),
+            datasets: [{
+              data: generateTemperatureData(),
+              borderColor: '#dc2626',
+              backgroundColor: 'rgba(220, 38, 38, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { display: false }, y: { display: false } },
+            interaction: { intersect: false }
+          }
+        });
+
+        // Update temperature data every 5 seconds
+        setInterval(() => {
+          const newData = generateTemperatureData();
+          temperatureChart.data.datasets[0].data = newData;
+          temperatureChart.update('none');
+
+          // Update value display
+          const temperatureValue = document.getElementById('temperatureValue');
+          if (temperatureValue) {
+            temperatureValue.textContent = newData[newData.length - 1].toFixed(1) + '°C';
+          }
+        }, 5000);
+      }
+
+      // CO2 Chart
+      const co2Ctx = document.getElementById('co2Chart');
+      if (co2Ctx) {
+        const co2Chart = new Chart(co2Ctx, {
+          type: 'line',
+          data: {
+            labels: Array.from({ length: 12 }, (_, i) => ''),
+            datasets: [{
+              data: generateCO2Data(),
+              borderColor: '#ea580c',
+              backgroundColor: 'rgba(234, 88, 12, 0.1)',
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { display: false }, y: { display: false } },
+            interaction: { intersect: false }
+          }
+        });
+
+        // Update CO2 data every 5 seconds
+        setInterval(() => {
+          const newData = generateCO2Data();
+          co2Chart.data.datasets[0].data = newData;
+          co2Chart.update('none');
+
+          // Update value display
+          const co2Value = document.getElementById('co2Value');
+          if (co2Value) {
+            co2Value.textContent = Math.round(newData[newData.length - 1]) + ' ppm';
+          }
+        }, 5000);
+      }
+    }
+
+    // Generate fake data functions
+    function generateHumidityData() {
+      const data = [];
+      for (let i = 0; i < 12; i++) {
+        // Độ ẩm: 75-80%
+        data.push(77.5 + Math.sin(i * 0.5) * 2.5 + Math.random() * 1);
+      }
+      return data;
+    }
+
+    function generateTemperatureData() {
+      const data = [];
+      for (let i = 0; i < 12; i++) {
+        // Nhiệt độ: 30-32°C
+        data.push(31 + Math.sin(i * 0.3) * 1 + Math.random() * 0.5);
+      }
+      return data;
+    }
+
+    function generateCO2Data() {
+      const data = [];
+      for (let i = 0; i < 12; i++) {
+        // CO2: 650-680 ppm
+        data.push(665 + Math.sin(i * 0.2) * 15 + Math.random() * 5);
+      }
+      return data;
+    }
+
+    // fake submit
+    function submitLead(ev) {
+      ev.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      alert(`${i18n('alerts.thanks')} ${name}! ${i18n('alerts.contact_via')} ${email}${phone ? ' / ' + phone : ''}.`);
+      ev.target.reset();
+      return false;
+    }
+
+
+    // =========================
+    // I18N: dữ liệu & tiện ích
+    // =========================
+    const LANG_KEY = 'musen_lang';
+
+    const dict = {
+      vi: {
+        // ARIA
+        'nav.home_aria': 'Trang chủ',
+        'nav.main_aria': 'Điều hướng chính',
+        'nav.open_menu_aria': 'Mở menu',
+        // NAV
+        'nav.home': 'Trang chủ',
+        'nav.services': 'Dịch vụ',
+        'nav.solutions': 'Giải pháp',
+        'nav.products': 'Sản phẩm',
+        'nav.projects': 'Dự án',
+        'nav.website': 'Website',
+        'nav.contact': 'Liên hệ',
+        'nav.consult': 'Nhận tư vấn',
+        'nav.login': 'Đăng nhập',
+        // SUBMENU
+        'submenu.website.services.title': 'Dịch vụ website',
+        'submenu.website.services.design.title': 'Thiết kế website',
+        'submenu.website.services.design.desc': 'Thiết kế website bán hàng, website doanh nghiệp trọn gói',
+        'submenu.website.services.templates.title': 'Kho giao diện',
+        'submenu.website.services.templates.desc': 'Kho giao diện website bán hàng, doanh nghiệp trên nền tảng Zozo',
+        'submenu.website.services.ai.title': 'Website AI',
+        'submenu.website.services.ai.desc': 'Tạo website nhanh chóng, chuyên nghiệp bằng AI',
+        'submenu.website.services.ai.tag': 'Mới',
+        'submenu.website.info.title': 'Thông tin & tiện ích',
+        'submenu.website.info.chatbot.title': 'Chatbot',
+        'submenu.website.info.chatbot.desc': 'Tạo chat bot Facebook gửi tin nhắn tự động tới khách hàng',
+        'submenu.website.info.crm.title': 'CRM & Marketing Automation',
+        'submenu.website.info.crm.desc': 'Quản lý và CSKH Tự động Đa kênh: Email, SMS, Zalo, Webpush, AutoCall',
+        // HERO
+        'hero.eyebrow': 'Tăng tốc chuyển đổi số',
+        'hero.title_html': 'Giải pháp <span style="color:var(--brand)">IoT</span> & <span style="color:var(--accent)">Tự động hoá</span><br>cho Doanh nghiệp & Nông nghiệp',
+        'hero.subtitle': 'Thiết kế – Sản xuất – Tích hợp hệ thống: gateway, cảm biến, cloud, dashboard, SCADA, AIoT. Triển khai nhanh, chi phí tối ưu, bảo hành tận nơi.',
+        'hero.cta_primary': 'Đặt cuộc hẹn',
+        'hero.cta_secondary': 'Xem dự án',
+        'hero.status.gateway': 'Gateway • Online',
+        'hero.status.devices': '24 thiết bị',
+        'hero.cards.humidity.label': 'Độ ẩm',
+        'hero.cards.humidity.value': '62%',
+        'hero.cards.temp.label': 'Nhiệt',
+        'hero.cards.temp.value': '29.6°C',
+        'hero.cards.ph.label': 'pH',
+        'hero.cards.ph.value': '7.4',
+        // SERVICES
+        'services.title': 'Dịch vụ cốt lõi',
+        'services.subtitle': 'Từ ý tưởng → nguyên mẫu → sản xuất → vận hành',
+        'services.items.hw.title': 'Thiết kế phần cứng',
+        'services.items.hw.desc': 'ESP32/STM32, LoRa/4G/5G, NB-IoT, RS485, Modbus, CAN, đo lường công nghiệp.',
+        'services.items.edge.title': 'AIoT & Edge',
+        'services.items.edge.desc': 'Nhận dạng hình ảnh, phát hiện người/xe, giám sát an ninh, phân tích biên.',
+        'services.items.cloud.title': 'Cloud & Dashboard',
+        'services.items.cloud.desc': 'MQTT/HTTP, dữ liệu thời gian thực, cảnh báo, báo cáo, SCADA web.',
+        'services.items.integr.title': 'Tích hợp hệ thống',
+        'services.items.integr.desc': 'PLC/SCADA, BMS/EMS, toà nhà thông minh, cổng kết nối đa giao thức.',
+        'services.items.proto.title': 'Prototype nhanh',
+        'services.items.proto.desc': 'In 3D, CNC, PCB nhanh, thử nghiệm hiện trường, tinh chỉnh theo yêu cầu.',
+        'services.items.sla.title': 'Bảo trì & SLA',
+        'services.items.sla.desc': 'Giám sát từ xa, cập nhật OTA, bảo hành tận nơi, cam kết dịch vụ.',
+        // SOLUTIONS
+        'solutions.title': 'Giải pháp tiêu biểu',
+        'solutions.subtitle': 'Nông nghiệp thông minh • Toà nhà • Quan trắc môi trường • Công nghiệp',
+        'solutions.agri.title': 'Nông nghiệp thông minh',
+        'solutions.agri.desc': 'Giám sát pH/DO/EC, nhiệt độ, độ ẩm, mức nước; điều khiển bơm/quạt/van tự động; dashboard & cảnh báo SMS/Zalo.',
+        'solutions.agri.tiles.farm': 'Trại tôm',
+        'solutions.agri.tiles.farm_val': '42 ao',
+        'solutions.agri.tiles.greenhouse': 'Nhà kính',
+        'solutions.agri.tiles.greenhouse_val': '6 khu',
+        'solutions.agri.tiles.drip': 'Tưới nhỏ giọt',
+        'solutions.agri.tiles.drip_val': 'IoT',
+        'solutions.building.title': 'Toà nhà & Năng lượng',
+        'solutions.building.li1': 'BMS/EMS, đo đếm điện đa kênh, tối ưu tiêu thụ.',
+        'solutions.building.li2': 'Giám sát máy phát, ATS, cảnh báo sự cố.',
+        'solutions.building.li3': 'Giải pháp an ninh, camera AI nhận diện.',
+        // PRODUCTS
+        'products.title': 'Sản phẩm',
+        'products.catalog': 'Tải catalogue',
+        'products.gw.title': 'ECO-Gateway',
+        'products.gw.desc': 'Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.',
+        'products.gw.img': 'Ảnh minh hoạ',
+        'products.gw.tag': 'v1.2',
+        'products.node.title': 'ECO-Node',
+        'products.node.desc': 'Cảm biến không dây LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.',
+        'products.node.img': 'Ảnh minh hoạ',
+        'products.node.tag': 'IP65',
+        'products.vision.title': 'ECO-Vision',
+        'products.vision.desc': 'Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.',
+        'products.vision.img': 'Ảnh minh hoạ',
+        'products.vision.tag': 'AIoT',
+        // PROJECTS
+        'projects.title': 'Dự án đã triển khai',
+        'projects.subtitle': 'Một vài con số biết nói',
+        'projects.stats.sites.value': '120+',
+        'projects.stats.sites.label': 'Site IoT đang hoạt động',
+        'projects.stats.sectors.value': '5+',
+        'projects.stats.sectors.label': 'Lĩnh vực công nghiệp',
+        'projects.stats.energy.value': '30%',
+        'projects.stats.energy.label': 'Tiết kiệm năng lượng TB',
+        'projects.stats.monitor.value': '24/7',
+        'projects.stats.monitor.label': 'Giám sát & cảnh báo',
+        'projects.clients.logo1': 'Logo 1',
+        'projects.clients.logo2': 'Logo 2',
+        'projects.clients.logo3': 'Logo 3',
+        'projects.clients.logo4': 'Logo 4',
+        'projects.clients.logo5': 'Logo 5',
+        'projects.clients.logo6': 'Logo 6',
+        // CONTACT
+        'contact.title': 'Cần tư vấn giải pháp cho dự án của bạn?',
+        'contact.subtitle': 'Gửi yêu cầu – Chúng tôi phản hồi trong 24 giờ.',
+        'contact.form.name': 'Họ tên',
+        'contact.form.name_aria': 'Họ tên',
+        'contact.form.email': 'Email',
+        'contact.form.email_aria': 'Email',
+        'contact.form.phone': 'Số điện thoại (tuỳ chọn)',
+        'contact.form.phone_aria': 'Số điện thoại',
+        'contact.form.submit': 'Gửi',
+        // FOOTER
+        'footer.MUSEN PLUS.title': 'MUSEN PLUS',
+        'footer.MUSEN PLUS.about': 'Về chúng tôi',
+        'footer.MUSEN PLUS.contact': 'Liên hệ',
+        'footer.MUSEN PLUS.payment_guide': 'Hướng dẫn thanh toán',
+        'footer.MUSEN PLUS.quality_commitment': 'Cam kết chất lượng dịch vụ',
+        'footer.MUSEN PLUS.points_policy': 'Chính sách tích điểm',
+        'footer.MUSEN PLUS.refund_policy': 'Quy định hoàn tiền',
+        'footer.MUSEN PLUS.legal_documents': 'Văn bản pháp lý',
+        'footer.MUSEN PLUS.recruitment': 'Tuyển dụng',
+        'footer.MUSEN PLUS.newsletter': 'Bản tin',
+        'footer.support.title': 'Hỗ trợ',
+        'footer.support.center': 'Trung tâm hỗ trợ',
+        'footer.support.terms_of_use': 'Thỏa thuận sử dụng',
+        'footer.support.privacy_policy': 'Thỏa thuận bảo mật',
+        'footer.support.domain_usage': 'Quy định sử dụng tên miền',
+        'footer.support.domain_dispute': 'Xử lý tranh chấp tên miền',
+        'footer.support.abuse_handling': 'Báo cáo và xử lý lạm dụng',
+        'footer.support.vn_domain_feedback': 'Góp ý tên miền .VN',
+        'footer.support.contract_templates': 'Mẫu hợp đồng',
+        'footer.support.data_protection': 'Chính sách thu thập, xử lý và bảo vệ dữ liệu cá nhân',
+        'footer.tools.title': 'Công cụ',
+        'footer.tools.whois_domain': 'Whois tên miền',
+        'footer.tools.whois_multi': 'Whois nhiều tên miền',
+        'footer.tools.domain_lookup': 'Lookup bản ghi tên miền',
+        'footer.tools.ip_lookup': 'Lookup thông tin IP',
+        'footer.tools.hosting_lookup': 'Lookup thông tin Hosting',
+        'footer.tools.onemail': 'OneMail',
+        'footer.tools.onepanel': 'OnePanel',
+        'footer.utilities.title': 'Tiện ích',
+        'footer.utilities.hide_domain': 'Ẩn thông tin tên miền',
+        'footer.utilities.lock_domain': 'Khóa tên miền',
+        'footer.utilities.ai_website': 'Tạo Web nhanh với AI',
+        'footer.utilities.email_forwarding': 'Email Forwarding',
+        'footer.utilities.dnssec': 'DNSSEC',
+        'footer.utilities.free_dns': 'DNS miễn phí',
+        'footer.services.title': 'Dịch vụ',
+        'footer.services.domain': 'Tên miền',
+        'footer.services.hosting': 'Hosting',
+        'footer.services.email': 'Email',
+        'footer.services.cloud_vps': 'Cloud VPS',
+        'footer.services.cloud_server': 'Cloud Server',
+        'footer.services.website': 'Website',
+        'footer.services.ssl': 'SSL',
+        'footer.copyright': 'Copyright © 2007 MUSEN PLUS',
+        'footer.company_info': 'Công ty TNHH Phần mềm MUSEN PLUS - Mã số thuế: 0103581701 cấp ngày: 11/03/2009 tại Phòng đăng ký kinh doanh Sở Kế hoạch và Đầu tư Thành phố Hà Nội - Đại diện: Ông Trần Kiên',
+        'footer.hcmc_address': '51/6/6 Nguyễn Văn Giáp, Phường Bình Trưng Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+        // Alerts
+        'alerts.thanks': 'Cảm ơn',
+        'alerts.contact_via': 'Chúng tôi sẽ liên hệ qua',
+      },
+
+      en: {
+        // ARIA
+        'nav.home_aria': 'Home',
+        'nav.main_aria': 'Primary navigation',
+        'nav.open_menu_aria': 'Open menu',
+        // NAV
+        'nav.home': 'Home',
+        'nav.services': 'Services',
+        'nav.solutions': 'Solutions',
+        'nav.products': 'Products',
+        'nav.projects': 'Projects',
+        'nav.website': 'Website',
+        'nav.contact': 'Contact',
+        'nav.consult': 'Consultation',
+        'nav.login': 'Login',
+        // SUBMENU
+        'submenu.website.services.title': 'Website Services',
+        'submenu.website.services.design.title': 'Website Design',
+        'submenu.website.services.design.desc': 'Complete e-commerce and business website design packages',
+        'submenu.website.services.templates.title': 'Template Store',
+        'submenu.website.services.templates.desc': 'E-commerce and business website templates on Zozo platform',
+        'submenu.website.services.ai.title': 'AI Website',
+        'submenu.website.services.ai.desc': 'Create fast, professional websites with AI',
+        'submenu.website.services.ai.tag': 'New',
+        'submenu.website.info.title': 'Information & Utilities',
+        'submenu.website.info.chatbot.title': 'Chatbot',
+        'submenu.website.info.chatbot.desc': 'Create Facebook chatbots to send automated messages to customers',
+        'submenu.website.info.crm.title': 'CRM & Marketing Automation',
+        'submenu.website.info.crm.desc': 'Multi-channel automated CRM & customer care: Email, SMS, Zalo, Webpush, AutoCall',
+        // HERO
+        'hero.eyebrow': 'Accelerate your digital transformation',
+        'hero.title_html': 'IoT <span style="color:var(--brand)">Solutions</span> & <span style="color:var(--accent)">Automation</span><br>for Enterprises & Agriculture',
+        'hero.subtitle': 'Design – Manufacturing – Systems Integration: gateways, sensors, cloud, dashboards, SCADA, AIoT. Fast deployment, optimized cost, on-site warranty.',
+        'hero.cta_primary': 'Book a meeting',
+        'hero.cta_secondary': 'View projects',
+        'hero.status.gateway': 'Gateway • Online',
+        'hero.status.devices': '24 devices',
+        'hero.cards.humidity.label': 'Humidity',
+        'hero.cards.humidity.value': '62%',
+        'hero.cards.temp.label': 'Temp',
+        'hero.cards.temp.value': '29.6°C',
+        'hero.cards.ph.label': 'pH',
+        'hero.cards.ph.value': '7.4',
+        // SERVICES
+        'services.title': 'Core Services',
+        'services.subtitle': 'From idea → prototype → production → operations',
+        'services.items.hw.title': 'Hardware Design',
+        'services.items.hw.desc': 'ESP32/STM32, LoRa/4G/5G, NB-IoT, RS485, Modbus, CAN, industrial measurements.',
+        'services.items.edge.title': 'AIoT & Edge',
+        'services.items.edge.desc': 'Computer vision, people/vehicle detection, security monitoring, edge analytics.',
+        'services.items.cloud.title': 'Cloud & Dashboards',
+        'services.items.cloud.desc': 'MQTT/HTTP, real-time data, alerts, reporting, web SCADA.',
+        'services.items.integr.title': 'Systems Integration',
+        'services.items.integr.desc': 'PLC/SCADA, BMS/EMS, smart buildings, multi-protocol gateways.',
+        'services.items.proto.title': 'Rapid Prototyping',
+        'services.items.proto.desc': '3D printing, CNC, quick-turn PCBs, field testing, tailored tuning.',
+        'services.items.sla.title': 'Maintenance & SLAs',
+        'services.items.sla.desc': 'Remote monitoring, OTA updates, on-site warranty, service commitments.',
+        // SOLUTIONS
+        'solutions.title': 'Featured Solutions',
+        'solutions.subtitle': 'Smart Agriculture • Buildings • Environmental Monitoring • Industry',
+        'solutions.agri.title': 'Smart Agriculture',
+        'solutions.agri.desc': 'Monitor pH/DO/EC, temperature, humidity, water level; automate pumps/fans/valves; dashboard & SMS/Zalo alerts.',
+        'solutions.agri.tiles.farm': 'Shrimp farms',
+        'solutions.agri.tiles.farm_val': '42 ponds',
+        'solutions.agri.tiles.greenhouse': 'Greenhouses',
+        'solutions.agri.tiles.greenhouse_val': '6 zones',
+        'solutions.agri.tiles.drip': 'Drip irrigation',
+        'solutions.agri.tiles.drip_val': 'IoT',
+        'solutions.building.title': 'Buildings & Energy',
+        'solutions.building.li1': 'BMS/EMS, multi-channel metering, consumption optimization.',
+        'solutions.building.li2': 'Genset monitoring, ATS, incident alerts.',
+        'solutions.building.li3': 'Security solutions, AI camera recognition.',
+        // PRODUCTS
+        'products.title': 'Products',
+        'products.catalog': 'Download catalog',
+        'products.gw.title': 'ECO-Gateway',
+        'products.gw.desc': 'Multi-protocol IoT gateway (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, 9–36VDC supply.',
+        'products.gw.img': 'Illustration',
+        'products.gw.tag': 'v1.2',
+        'products.node.title': 'ECO-Node',
+        'products.node.desc': 'Wireless LoRa/NB-IoT sensors: temp/humidity, pH, DO, water level, current, vibration.',
+        'products.node.img': 'Illustration',
+        'products.node.tag': 'IP65',
+        'products.vision.title': 'ECO-Vision',
+        'products.vision.desc': 'AI camera system for people/vehicle recognition, restricted zones, traffic counting.',
+        'products.vision.img': 'Illustration',
+        'products.vision.tag': 'AIoT',
+        // PROJECTS
+        'projects.title': 'Delivered Projects',
+        'projects.subtitle': 'A few numbers that matter',
+        'projects.stats.sites.value': '120+',
+        'projects.stats.sites.label': 'Active IoT sites',
+        'projects.stats.sectors.value': '5+',
+        'projects.stats.sectors.label': 'Industrial sectors',
+        'projects.stats.energy.value': '30%',
+        'projects.stats.energy.label': 'Avg. energy saving',
+        'projects.stats.monitor.value': '24/7',
+        'projects.stats.monitor.label': 'Monitoring & alerts',
+        'projects.clients.logo1': 'Logo 1',
+        'projects.clients.logo2': 'Logo 2',
+        'projects.clients.logo3': 'Logo 3',
+        'projects.clients.logo4': 'Logo 4',
+        'projects.clients.logo5': 'Logo 5',
+        'projects.clients.logo6': 'Logo 6',
+        // CONTACT
+        'contact.title': 'Need expert guidance for your project?',
+        'contact.subtitle': 'Send your request — we respond within 24 hours.',
+        'contact.form.name': 'Full name',
+        'contact.form.name_aria': 'Full name',
+        'contact.form.email': 'Email',
+        'contact.form.email_aria': 'Email',
+        'contact.form.phone': 'Phone (optional)',
+        'contact.form.phone_aria': 'Phone number',
+        'contact.form.submit': 'Send',
+        // FOOTER
+        'footer.MUSEN PLUS.title': 'MUSEN PLUS',
+        'footer.MUSEN PLUS.about': 'About us',
+        'footer.MUSEN PLUS.contact': 'Contact',
+        'footer.MUSEN PLUS.payment_guide': 'Payment guide',
+        'footer.MUSEN PLUS.quality_commitment': 'Service quality commitment',
+        'footer.MUSEN PLUS.points_policy': 'Points policy',
+        'footer.MUSEN PLUS.refund_policy': 'Refund policy',
+        'footer.MUSEN PLUS.legal_documents': 'Legal documents',
+        'footer.MUSEN PLUS.recruitment': 'Recruitment',
+        'footer.MUSEN PLUS.newsletter': 'Newsletter',
+        'footer.support.title': 'Support',
+        'footer.support.center': 'Support center',
+        'footer.support.terms_of_use': 'Terms of use',
+        'footer.support.privacy_policy': 'Privacy policy',
+        'footer.support.domain_usage': 'Domain usage regulations',
+        'footer.support.domain_dispute': 'Domain dispute resolution',
+        'footer.support.abuse_handling': 'Report and handle abuse',
+        'footer.support.vn_domain_feedback': 'Feedback on .VN domain',
+        'footer.support.contract_templates': 'Contract templates',
+        'footer.support.data_protection': 'Personal data collection, processing, and protection policy',
+        'footer.tools.title': 'Tools',
+        'footer.tools.whois_domain': 'Whois domain',
+        'footer.tools.whois_multi': 'Multi-domain Whois',
+        'footer.tools.domain_lookup': 'Domain record lookup',
+        'footer.tools.ip_lookup': 'IP information lookup',
+        'footer.tools.hosting_lookup': 'Hosting information lookup',
+        'footer.tools.onemail': 'OneMail',
+        'footer.tools.onepanel': 'OnePanel',
+        'footer.utilities.title': 'Utilities',
+        'footer.utilities.hide_domain': 'Hide domain information',
+        'footer.utilities.lock_domain': 'Lock domain',
+        'footer.utilities.ai_website': 'Create website quickly with AI',
+        'footer.utilities.email_forwarding': 'Email Forwarding',
+        'footer.utilities.dnssec': 'DNSSEC',
+        'footer.utilities.free_dns': 'Free DNS',
+        'footer.services.title': 'Services',
+        'footer.services.domain': 'Domain',
+        'footer.services.hosting': 'Hosting',
+        'footer.services.email': 'Email',
+        'footer.services.cloud_vps': 'Cloud VPS',
+        'footer.services.cloud_server': 'Cloud Server',
+        'footer.services.website': 'Website',
+        'footer.services.ssl': 'SSL',
+        'footer.copyright': 'Copyright © 2007 MUSEN PLUS - Vietnam and International Domain Registrar',
+        'footer.company_info': 'MUSEN PLUS Software Co., Ltd. - Tax code: 0103581701 issued on: 11/03/2009 at Hanoi Department of Planning and Investment - Representative: Mr. Tran Kien',
+        'footer.hcmc_address': 'Ho Chi Minh City: 40 Hoang Viet, Tan Son Nhat Ward, HCMC',
+        // Alerts
+        'alerts.thanks': 'Thank you',
+        'alerts.contact_via': 'We will contact you via',
+      },
+
+      jp: {
+        // ARIA
+        'nav.home_aria': 'ホーム',
+        'nav.main_aria': 'メインナビゲーション',
+        'nav.open_menu_aria': 'メニューを開く',
+        // NAV
+        'nav.home': 'ホーム',
+        'nav.services': 'サービス',
+        'nav.solutions': 'ソリューション',
+        'nav.products': '製品',
+        'nav.projects': 'プロジェクト',
+        'nav.website': 'ウェブサイト',
+        'nav.contact': 'お問い合わせ',
+        'nav.consult': '相談',
+        'nav.login': 'ログイン',
+        // SUBMENU
+        'submenu.website.services.title': 'ウェブサイトサービス',
+        'submenu.website.services.design.title': 'ウェブサイトデザイン',
+        'submenu.website.services.design.desc': 'ECサイト、企業ウェブサイトの完全パッケージデザイン',
+        'submenu.website.services.templates.title': 'テンプレートストア',
+        'submenu.website.services.templates.desc': 'ZozoプラットフォームのEC・企業ウェブサイトテンプレート',
+        'submenu.website.services.ai.title': 'AIウェブサイト',
+        'submenu.website.services.ai.desc': 'AIで迅速かつプロフェッショナルなウェブサイトを作成',
+        'submenu.website.services.ai.tag': '新着',
+        'submenu.website.info.title': '情報・ユーティリティ',
+        'submenu.website.info.chatbot.title': 'チャットボット',
+        'submenu.website.info.chatbot.desc': 'Facebookチャットボットで顧客への自動メッセージ送信',
+        'submenu.website.info.crm.title': 'CRM & マーケティング自動化',
+        'submenu.website.info.crm.desc': 'マルチチャネル自動CRM・顧客ケア：Email、SMS、Zalo、Webpush、AutoCall',
+        // HERO
+        'hero.eyebrow': 'デジタル変革を加速',
+        'hero.title_html': '企業と農業向け <span style="color:var(--brand)">IoT</span> ＆ <span style="color:var(--accent)">自動化</span> ソリューション',
+        'hero.subtitle': '設計・製造・システム統合：ゲートウェイ、センサー、クラウド、ダッシュボード、SCADA、AIoT。迅速導入・最適コスト・現地保証。',
+        'hero.cta_primary': '面談を予約',
+        'hero.cta_secondary': '事例を見る',
+        'hero.status.gateway': 'ゲートウェイ • 稼働中',
+        'hero.status.devices': '24 台',
+        'hero.cards.humidity.label': '湿度',
+        'hero.cards.humidity.value': '62%',
+        'hero.cards.temp.label': '温度',
+        'hero.cards.temp.value': '29.6°C',
+        'hero.cards.ph.label': 'pH',
+        'hero.cards.ph.value': '7.4',
+        // SERVICES
+        'services.title': 'コアサービス',
+        'services.subtitle': 'アイデア → 試作 → 量産 → 運用',
+        'services.items.hw.title': 'ハードウェア設計',
+        'services.items.hw.desc': 'ESP32/STM32、LoRa/4G/5G、NB-IoT、RS485、Modbus、CAN、産業計測。',
+        'services.items.edge.title': 'AIoT & エッジ',
+        'services.items.edge.desc': '画像認識、人/車両検知、セキュリティ監視、エッジ分析。',
+        'services.items.cloud.title': 'クラウド & ダッシュボード',
+        'services.items.cloud.desc': 'MQTT/HTTP、リアルタイムデータ、アラート、レポート、Web SCADA。',
+        'services.items.integr.title': 'システム統合',
+        'services.items.integr.desc': 'PLC/SCADA、BMS/EMS、スマートビル、マルチプロトコルGW。',
+        'services.items.proto.title': '迅速プロトタイピング',
+        'services.items.proto.desc': '3Dプリント、CNC、短納期PCB、実地試験、要件調整。',
+        'services.items.sla.title': '保守 & SLA',
+        'services.items.sla.desc': '遠隔監視、OTA更新、オンサイト保証、サービス品質。',
+        // SOLUTIONS
+        'solutions.title': '主要ソリューション',
+        'solutions.subtitle': 'スマート農業・ビル・環境監視・産業',
+        'solutions.agri.title': 'スマート農業',
+        'solutions.agri.desc': 'pH/DO/EC、温度、湿度、水位の監視；ポンプ/ファン/バルブ自動制御；ダッシュボード & SMS/Zalo アラート。',
+        'solutions.agri.tiles.farm': 'エビ養殖場',
+        'solutions.agri.tiles.farm_val': '42 池',
+        'solutions.agri.tiles.greenhouse': '温室',
+        'solutions.agri.tiles.greenhouse_val': '6 ゾーン',
+        'solutions.agri.tiles.drip': '点滴灌漑',
+        'solutions.agri.tiles.drip_val': 'IoT',
+        'solutions.building.title': 'ビル & エネルギー',
+        'solutions.building.li1': 'BMS/EMS、多回路計測、消費最適化。',
+        'solutions.building.li2': '発電機監視、ATS、インシデント警告。',
+        'solutions.building.li3': 'セキュリティ、AIカメラ認識。',
+        // PRODUCTS
+        'products.title': '製品',
+        'products.catalog': 'カタログをダウンロード',
+        'products.gw.title': 'ECO-Gateway',
+        'products.gw.desc': 'マルチプロトコルIoTゲートウェイ（MQTT/HTTP/Modbus）、4G/LTE、Wi-Fi、Ethernet、9–36VDC給電。',
+        'products.gw.img': 'イメージ',
+        'products.gw.tag': 'v1.2',
+        'products.node.title': 'ECO-Node',
+        'products.node.desc': '無線LoRa/NB-IoTセンサー：温湿度、pH、DO、水位、電流、振動。',
+        'products.node.img': 'イメージ',
+        'products.node.tag': 'IP65',
+        'products.vision.title': 'ECO-Vision',
+        'products.vision.desc': 'AIカメラ：人/車両認識、立入禁止エリア監視、トラフィックカウント。',
+        'products.vision.img': 'イメージ',
+        'products.vision.tag': 'AIoT',
+        // PROJECTS
+        'projects.title': '導入事例',
+        'projects.subtitle': '数字で見る実績',
+        'projects.stats.sites.value': '120+',
+        'projects.stats.sites.label': '稼働中のIoTサイト',
+        'projects.stats.sectors.value': '5+',
+        'projects.stats.sectors.label': '産業分野',
+        'projects.stats.energy.value': '30%',
+        'projects.stats.energy.label': '平均節電率',
+        'projects.stats.monitor.value': '24/7',
+        'projects.stats.monitor.label': '監視 & アラート',
+        'projects.clients.logo1': 'ロゴ 1',
+        'projects.clients.logo2': 'ロゴ 2',
+        'projects.clients.logo3': 'ロゴ 3',
+        'projects.clients.logo4': 'ロゴ 4',
+        'projects.clients.logo5': 'ロゴ 5',
+        'projects.clients.logo6': 'ロゴ 6',
+        // CONTACT
+        'contact.title': 'プロジェクトのご相談はお気軽に',
+        'contact.subtitle': '24時間以内にご返信します。',
+        'contact.form.name': '氏名',
+        'contact.form.name_aria': '氏名',
+        'contact.form.email': 'メール',
+        'contact.form.email_aria': 'メール',
+        'contact.form.phone': '電話番号（任意）',
+        'contact.form.phone_aria': '電話番号',
+        'contact.form.submit': '送信',
+        // FOOTER
+        'footer.MUSEN PLUS.title': 'MUSEN PLUS',
+        'footer.MUSEN PLUS.about': '会社概要',
+        'footer.MUSEN PLUS.contact': 'お問い合わせ',
+        'footer.MUSEN PLUS.payment_guide': '支払いガイド',
+        'footer.MUSEN PLUS.quality_commitment': 'サービス品質保証',
+        'footer.MUSEN PLUS.points_policy': 'ポイントポリシー',
+        'footer.MUSEN PLUS.refund_policy': '返金規定',
+        'footer.MUSEN PLUS.legal_documents': '法的文書',
+        'footer.MUSEN PLUS.recruitment': '採用情報',
+        'footer.MUSEN PLUS.newsletter': 'ニュースレター',
+        'footer.support.title': 'サポート',
+        'footer.support.center': 'サポートセンター',
+        'footer.support.terms_of_use': '利用規約',
+        'footer.support.privacy_policy': 'プライバシーポリシー',
+        'footer.support.domain_usage': 'ドメイン利用規定',
+        'footer.support.domain_dispute': 'ドメイン紛争解決',
+        'footer.support.abuse_handling': '不正利用の報告と処理',
+        'footer.support.vn_domain_feedback': '.VNドメインへのフィードバック',
+        'footer.support.contract_templates': '契約テンプレート',
+        'footer.support.data_protection': '個人データの収集、処理、保護ポリシー',
+        'footer.tools.title': 'ツール',
+        'footer.tools.whois_domain': 'ドメインWhois',
+        'footer.tools.whois_multi': '複数ドメインWhois',
+        'footer.tools.domain_lookup': 'ドメインレコード検索',
+        'footer.tools.ip_lookup': 'IP情報検索',
+        'footer.tools.hosting_lookup': 'ホスティング情報検索',
+        'footer.tools.onemail': 'OneMail',
+        'footer.tools.onepanel': 'OnePanel',
+        'footer.utilities.title': 'ユーティリティ',
+        'footer.utilities.hide_domain': 'ドメイン情報の非表示',
+        'footer.utilities.lock_domain': 'ドメインロック',
+        'footer.utilities.ai_website': 'AIでWebサイトを素早く作成',
+        'footer.utilities.email_forwarding': 'Email Forwarding',
+        'footer.utilities.dnssec': 'DNSSEC',
+        'footer.utilities.free_dns': '無料DNS',
+        'footer.services.title': 'サービス',
+        'footer.services.domain': 'ドメイン',
+        'footer.services.hosting': 'ホスティング',
+        'footer.services.email': 'メール',
+        'footer.services.cloud_vps': 'Cloud VPS',
+        'footer.services.cloud_server': 'Cloud Server',
+        'footer.services.website': 'ウェブサイト',
+        'footer.services.ssl': 'SSL',
+        'footer.copyright': 'Copyright © 2007 MUSEN PLUS - ベトナム・国際ドメイン登録機関',
+        'footer.company_info': 'MUSEN PLUSソフトウェア株式会社 - 税務番号: 0103581701 発行日: 2009年3月11日 ハノイ計画投資局 - 代表者: チャン・キエン氏',
+        'footer.hcmc_address': 'ホーチミン市: 40 Hoang Viet, Tan Son Nhat Ward, HCMC',
+        // Alerts
+        'alerts.thanks': 'ありがとうございます',
+        'alerts.contact_via': '次の連絡先にご連絡します',
+      }
+    };
+
+    function i18n(key) {
+      const lang = localStorage.getItem(LANG_KEY) || 'vi';
+      return (dict[lang] && dict[lang][key]) || (dict.vi && dict.vi[key]) || '';
+    }
+
+    function applyI18nToElement(el, lang) {
+      // text content
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        const val = dict[lang][key] ?? dict.vi[key] ?? '';
+        // Nếu chuỗi có HTML (ví dụ hero.title_html) thì innerHTML, còn lại textContent
+        if (/_html$/.test(key)) el.innerHTML = val;
+        else el.textContent = val;
+      }
+      // placeholder
+      const phKey = el.getAttribute('data-i18n-placeholder');
+      if (phKey) {
+        const ph = dict[lang][phKey] ?? dict.vi[phKey] ?? '';
+        el.setAttribute('placeholder', ph);
+      }
+      // aria-label
+      const ariaKey = el.getAttribute('data-i18n-aria-label');
+      if (ariaKey) {
+        const aria = dict[lang][ariaKey] ?? dict.vi[ariaKey] ?? '';
+        el.setAttribute('aria-label', aria);
+      }
+    }
+
+    function setLanguage(lang) {
+      // Lưu
+      localStorage.setItem(LANG_KEY, lang);
+      // Áp dụng cho tất cả phần tử có data-i18n / data-i18n-*
+      document.querySelectorAll('[data-i18n], [data-i18n-placeholder], [data-i18n-aria-label]').forEach(el => {
+        applyI18nToElement(el, lang);
+      });
+      // Cập nhật <html lang="...">
+      document.documentElement.lang = lang;
+      // Cập nhật tiêu đề trang & meta description (tùy chọn)
+      const titleMap = {
+        vi: 'MUSEN PLUS IoT – Giải pháp IoT & Tự động hoá',
+        en: 'MUSEN PLUS IoT – IoT & Automation Solutions',
+        jp: 'MUSEN PLUS IoT – IoT & 自動化ソリューション'
+      };
+      document.title = titleMap[lang] || titleMap.vi;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      const descMap = {
+        vi: 'Giải pháp IoT, AIoT, SCADA, nông nghiệp thông minh, toà nhà thông minh, quan trắc môi trường, sản phẩm phần cứng & phần mềm theo yêu cầu.',
+        en: 'IoT, AIoT, SCADA, smart agriculture, smart buildings, environmental monitoring, custom hardware & software.',
+        jp: 'IoT/AIoT/SCADA、スマート農業、スマートビル、環境監視、受託ハード/ソフトウェアのソリューション。'
+      };
+      if (metaDesc) metaDesc.setAttribute('content', descMap[lang] || descMap.vi);
+    }
+
+    function changeLanguage(lang) {
+      setLanguage(lang);
+    }
+
+    // Khởi tạo theo ngôn ngữ đã lưu (mặc định VI)
+    (function initLang() {
+      const saved = localStorage.getItem(LANG_KEY) || 'vi';
+      const sel = document.getElementById('language');
+      if (sel) sel.value = saved;
+      setLanguage(saved);
+    })();
+  </script>
+</body>
+
+</html>
