@@ -8,7 +8,7 @@ window.lang_jp = {
         'nav.solutions': 'ソリューション',
         'nav.products': '製品',
         'nav.projects': 'プロジェクト',
-        'nav.contact': 'お問い合わせ',
+        'nav.contact': '相談',
         'nav.consult': '相談',
         'nav.login': 'ログイン',
         // HERO
@@ -112,9 +112,12 @@ window.lang_jp = {
         'footer.newsletter.cta': '登録',
         'footer.rights': 'All rights reserved.',
         'footer.company': '会社情報',
+        // Tech Platforms
+        'tech.title': 'Musen Plusのテクノロジープラットフォーム',
+        'tech.subtitle': 'Musen Plusがサポートするソフトウェア、ハードウェア、プロトコルのエコシステム',
         // Alerts
         'alerts.thanks': 'ありがとうございます',
-        'alerts.contact_via': '次の連絡先にご連絡します',
+        'alerts.contact_via': '以下の連絡先にご連絡いたします：',
         'footer.copyright_prefix': '©',
 
         'platform.title': 'Musen Plus プラットフォームと技術',

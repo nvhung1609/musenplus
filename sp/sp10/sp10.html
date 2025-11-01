@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musen Cloud IoT Analytics | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./sp10.css" />
+  <script src="./sp10.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> musenplus2@gmail.com</a>
+        <a href="tel:0338812063"><i class="fa-solid fa-phone"></i> 0338812063</a>
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)">
+            <i class="fa-solid fa-bell"></i><span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật Cloud</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-cloud"></i> Musen Cloud phiên bản 3.0 ra mắt</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-chart-line"></i> Cập nhật dashboard phân tích AI</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-database"></i> Tăng tốc xử lý dữ liệu cảm biến IoT</a></div>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Musen Cloud IoT Analytics</h1>
+      <p class="lead">
+        Nền tảng quản lý, phân tích và trực quan hóa dữ liệu IoT toàn diện – hỗ trợ kết nối hàng nghìn thiết bị, cảm biến và gateway cùng lúc.
+      </p>
+
+      <img class="product-img" src="../image/musen-cloud-iot.jpg" alt="Musen Cloud IoT Analytics" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Musen Cloud IoT Analytics</strong> là nền tảng điện toán đám mây được phát triển riêng cho hệ sinh thái IoT của Musen Plus. 
+        Giúp doanh nghiệp thu thập, xử lý và phân tích dữ liệu cảm biến, đồng thời hiển thị qua dashboard trực quan, biểu đồ, bản đồ và cảnh báo tức thời.
+      </p>
+
+      <h3>Tính năng chính</h3>
+      <ul>
+        <li>Quản lý thiết bị IoT và người dùng theo thời gian thực</li>
+        <li>Phân quyền truy cập và chia sẻ dữ liệu linh hoạt</li>
+        <li>Dashboard trực quan: biểu đồ, bản đồ, heatmap, gauge, log</li>
+        <li>Cảnh báo tự động qua email, Telegram, Zalo, SMS</li>
+        <li>Hỗ trợ lưu trữ dữ liệu lịch sử dài hạn, truy vấn nhanh</li>
+        <li>Tích hợp API mở cho hệ thống thứ ba</li>
+      </ul>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Musen Cloud Core:</strong> Máy chủ quản lý thiết bị, người dùng, dữ liệu.</li>
+        <li><strong>MQTT Broker Cluster:</strong> Xử lý hàng triệu message mỗi giây từ gateway.</li>
+        <li><strong>Dashboard Web:</strong> Giao diện hiển thị dữ liệu và biểu đồ tùy biến.</li>
+        <li><strong>AI Analytics Engine:</strong> Mô hình học máy phân tích xu hướng và phát hiện bất thường.</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>Ngôn ngữ & Framework: Node.js, Python, MongoDB, MQTT, Redis</li>
+        <li>API: RESTful + WebSocket + MQTT over TLS</li>
+        <li>Tích hợp AI: TensorFlow Lite, Scikit-learn, OpenAI API</li>
+        <li>Độ sẵn sàng: 99.9%, cân bằng tải và sao lưu tự động</li>
+        <li>Bảo mật: SSL/TLS, token-based auth, RBAC</li>
+      </ul>
+
+      <h3>Ứng dụng thực tế</h3>
+      <ul>
+        <li>Giám sát năng lượng, nông nghiệp, môi trường, logistics</li>
+        <li>Thu thập và phân tích dữ liệu công nghiệp 4.0</li>
+        <li>Xây dựng báo cáo tự động, dashboard quản trị</li>
+        <li>Kết nối đa nền tảng: web, mobile, cloud API</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Tập trung dữ liệu từ mọi thiết bị IoT</li>
+        <li>Phân tích nhanh, trực quan, ra quyết định chính xác</li>
+        <li>Giảm chi phí vận hành nhờ hạ tầng cloud tối ưu</li>
+        <li>Hỗ trợ triển khai mô hình AI/ML trong thực tế</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn muốn xây dựng hệ thống Cloud IoT riêng?</h4>
+          <p class="muted">Liên hệ Musen Plus để được tư vấn triển khai nền tảng Cloud IoT cho doanh nghiệp.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Musen Cloud IoT – nền tảng đám mây quản lý và phân tích dữ liệu IoT, tích hợp AI và API mở.</p>
+      </div>
+      <div>
+        <h4>Ứng dụng</h4>
+        <ul>
+          <li>Dashboard dữ liệu IoT</li>
+          <li>Cảnh báo tự động</li>
+          <li>Phân tích xu hướng</li>
+          <li>API tích hợp doanh nghiệp</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ</h4>
+        <ul>
+          <li>Node.js / MQTT / MongoDB</li>
+          <li>AI Analytics Engine</li>
+          <li>Musen Cloud Dashboard</li>
+          <li>Musen API Gateway</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Musen Cloud IoT Analytics.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

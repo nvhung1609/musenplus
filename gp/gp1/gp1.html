@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hệ thống phát hiện va chạm cho xe nâng | MUSEN PLUS IoT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./gp1.css" />
+  <script src="./gp1.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="/index.html" aria-label="Trang chủ">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com" title="Gửi email">
+          <i class="fa-solid fa-envelope"></i> musenplus2@gmail.com
+        </a>
+        <a href="tel:0338812063" title="Gọi hotline">
+          <i class="fa-solid fa-phone"></i> 0338812063
+        </a>
+
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-car-burst"></i> Ra mắt hệ thống phát hiện va chạm cho xe nâng</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-microchip"></i> Nâng cấp AI Box Plus – xử lý AI nhanh hơn 50%</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-industry"></i> Giải pháp an toàn cho nhà máy thông minh</a></div>
+          </div>
+        </div>
+
+        <a href="#" title="Đăng nhập"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu" aria-label="Chính">
+        <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="/index.html#dich-vu">Dịch vụ</a>
+        <a href="/index.html#giai-phap">Giải pháp</a>
+        <a href="/index.html#san-pham">Sản phẩm</a>
+        <a href="/index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='/index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG SẢN PHẨM ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Hệ thống phát hiện va chạm cho xe nâng</h1>
+      <p class="lead">
+        Giải pháp an toàn thông minh giúp giảm thiểu tai nạn trong kho, nhà máy – cảnh báo va chạm bằng AI, radar và cảm biến chính xác cao.
+      </p>
+
+      <img class="product-img" src="../image/forklift-detection-system.jpg" alt="Hệ thống phát hiện va chạm cho xe nâng" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        Hệ thống phát hiện va chạm cho xe nâng <strong>MUSEN PLUS</strong> được phát triển nhằm tăng cường an toàn trong quá trình vận hành xe nâng tại kho hàng, nhà máy và khu vực sản xuất. 
+        Giải pháp sử dụng công nghệ <strong>AI Vision + Radar + Ultra-wideband (UWB)</strong> để nhận diện con người, vật cản, đồng thời đưa ra cảnh báo tức thời cho tài xế và bộ phận quản lý.
+      </p>
+
+      <h3>Đặc điểm nổi bật</h3>
+      <ul>
+        <li>Cảnh báo va chạm thông minh bằng AI & Radar đa vùng</li>
+        <li>Nhận diện người và vật cản trong phạm vi tới 10 mét</li>
+        <li>Tích hợp màn hình cảnh báo, đèn và còi báo động</li>
+        <li>Kết nối với nền tảng IoT Cloud để giám sát theo thời gian thực</li>
+        <li>Hỗ trợ phân tích dữ liệu hành vi lái xe và báo cáo sự cố</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>Bộ xử lý trung tâm AI Box Plus – ESP32-S3 + NPU</li>
+        <li>Cảm biến Radar 60 GHz, Camera AI 2MP, Module UWB</li>
+        <li>Màn hình IPS TFT 2.8” – hiển thị cảnh báo trực quan</li>
+        <li>Hỗ trợ Wi-Fi / 4G LTE / RS485 / CAN / MQTT</li>
+        <li>Nguồn DC 12–36V, tiêu thụ điện năng thấp</li>
+        <li>Chuẩn IP65, hoạt động bền bỉ trong môi trường công nghiệp</li>
+      </ul>
+
+      <h3>Ứng dụng</h3>
+      <p>
+        Giải pháp phù hợp cho:
+      </p>
+      <ul>
+        <li>Xe nâng trong nhà kho, nhà xưởng, bãi đỗ</li>
+        <li>Xe di chuyển trong khu vực có mật độ người cao</li>
+        <li>Giám sát và cảnh báo khu vực nguy hiểm trong nhà máy</li>
+        <li>Kết nối dữ liệu an toàn về hệ thống quản lý trung tâm (SCADA / IoT Cloud)</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Giảm nguy cơ tai nạn lao động và thiệt hại tài sản</li>
+        <li>Cảnh báo sớm cho tài xế – tăng khả năng phản ứng</li>
+        <li>Quản lý dữ liệu vận hành xe nâng tập trung</li>
+        <li>Nâng cao chuẩn an toàn và tuân thủ ISO 45001</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Cần tư vấn giải pháp an toàn cho nhà máy của bạn?</h4>
+          <p class="muted">Gửi yêu cầu – Chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT toàn diện – từ cảm biến, gateway, AI Box đến nền tảng quản lý an toàn thông minh cho công nghiệp và kho vận.</p>
+      </div>
+      <div>
+        <h4>Ứng dụng an toàn</h4>
+        <ul>
+          <li>Phát hiện va chạm xe nâng</li>
+          <li>Cảnh báo khu vực nguy hiểm</li>
+          <li>Giám sát hành vi tài xế</li>
+          <li>Tự động ghi nhận sự cố</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghiệp 4.0</h4>
+        <ul>
+          <li>Kết nối SCADA & IoT Cloud</li>
+          <li>Bảo trì dự đoán bằng AI</li>
+          <li>Giám sát năng lượng và an toàn</li>
+          <li>Tích hợp hệ thống cảnh báo toàn nhà máy</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Hệ thống phát hiện va chạm & Giải pháp an toàn công nghiệp.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

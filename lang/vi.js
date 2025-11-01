@@ -70,6 +70,7 @@ window.lang_vi = {
         'products.vision.desc': 'Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.',
         'products.vision.img': 'Ảnh minh hoạ',
         'products.vision.tag': 'AIoT',
+        
         // PROJECTS
         'projects.title': 'Dự án đã triển khai',
         'projects.subtitle': 'Một vài con số biết nói',
@@ -112,6 +113,9 @@ window.lang_vi = {
         'footer.newsletter.cta': 'Đăng ký',
         'footer.rights': 'All rights reserved.',
         'footer.company': 'Công ty',
+        // Tech Platforms
+        'tech.title': 'Nền tảng & Công nghệ Musen Plus',
+        'tech.subtitle': 'Các hệ sinh thái phần mềm, phần cứng và giao thức mà Musen Plus hỗ trợ.',
         // Alerts
         'alerts.thanks': 'Cảm ơn',
         'alerts.contact_via': 'Chúng tôi sẽ liên hệ qua',

@@ -8,7 +8,7 @@ window.lang_en = {
         'nav.solutions': 'Solutions',
         'nav.products': 'Products',
         'nav.projects': 'Projects',
-        'nav.contact': 'Contact',
+        'nav.contact': 'Consultation',
         'nav.consult': 'Consultation',
         'nav.login': 'Login',
         // HERO
@@ -70,6 +70,7 @@ window.lang_en = {
         'products.vision.desc': 'AI camera system for people/vehicle recognition, restricted zones, traffic counting.',
         'products.vision.img': 'Illustration',
         'products.vision.tag': 'AIoT',
+        
         // PROJECTS
         'projects.title': 'Delivered Projects',
         'projects.subtitle': 'A few numbers that matter',
@@ -112,6 +113,9 @@ window.lang_en = {
         'footer.newsletter.cta': 'Subscribe',
         'footer.rights': 'All rights reserved.',
         'footer.company': 'Company',
+        // Tech Platforms
+        'tech.title': 'Musen Plus Technology Platforms',
+        'tech.subtitle': 'Software, hardware and protocol ecosystems supported by Musen Plus.',
         // Alerts
         'alerts.thanks': 'Thank you',
         'alerts.contact_via': 'We will contact you via',

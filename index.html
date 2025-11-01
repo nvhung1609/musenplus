@@ -28,11 +28,9 @@
   <div class="top-header-wrap">
     <div class="container">
       <!-- Logo -->
-      <div class="top-header-logo">
-        <a aria-label="Trang chủ" class="logo" data-i18n-aria-label="nav.home_aria" href="#">
-          <img alt="Logo MUSEN PLUS IoT" class="logo-mark" src="image/logo.png" />
-          <span>MUSEN PLUS IoT</span>
-        </a>
+      <div class="logo">
+        <img src="image/logo.png" alt="Musen Plus IoT">
+        <span>MUSEN PLUS IoT</span>
       </div>
       <!-- Award Carousel -->
       <div class="top-award">
@@ -42,58 +40,64 @@
       <!-- Top Header Menu -->
       <div class="top-header-menu">
         <!-- Hotline -->
-        <a href="tel:0338812063" title="Hotline hỗ trợ 24/7">
-          <i class="fa fa-envelope"></i> musenplus2@gmail.com
-          <i class="fa fa-phone"></i> 0338812063
-        </a>
+        <div class="top-header-menu">
+          <a href="mailto:musenplus2@gmail.com" title="Gửi email đến Musen Plus">
+            <i class="fa fa-envelope"></i> musenplus2@gmail.com
+          </a>
+          <a href="tel:0338812063" title="Gọi hotline hỗ trợ 24/7">
+            <i class="fa fa-phone"></i> 0338812063
+          </a>
+        </div>
+
         <!-- Notifications -->
         <div class="notifications">
-          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo của bạn">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo IoT của bạn">
             <i class="fa fa-bell"></i>
-            <span class="notifications-length">9</span>
+            <span class="notifications-length">3</span>
           </a>
           <div class="dropdown-menu" id="notificationsDropdown">
             <div class="dropdown-header">
-              <strong>Chương trình khuyến mãi</strong>
+              <strong>Tin tức & Cập nhật IoT</strong>
             </div>
+
             <div class="notifications-item">
               <a href="#" target="_blank">
-                <i class="fa fa-gift"></i>
+                <i class="fa fa-microchip"></i>
                 <div class="notifications-content">
                   <div class="ntfct-header">
-                    <strong>Ưu đãi 30% Cloud Server cài sẵn nền tảng n8n</strong>
+                    <strong>Ra mắt AI Box Plus – Bộ xử lý trung tâm cho hệ IoT</strong>
+                    <i class="fas fa-microchip fa-2x"></i>
                   </div>
-                  <img alt="Cloud Server"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPk5OPC90ZXh0Pgo8L3N2Zz4K" />
                 </div>
               </a>
             </div>
+
             <div class="notifications-item">
               <a href="#" target="_blank">
-                <i class="fa fa-shield"></i>
+                <i class="fa fa-satellite-dish"></i>
                 <div class="notifications-content">
                   <div class="ntfct-header">
-                    <strong>MUSEN PLUS ra mắt OneShield - Bộ giải pháp bảo mật</strong>
+                    <strong>Cập nhật Gateway LoRa v2 – Tốc độ và độ ổn định cao hơn 30%</strong>
+                    <i class="fas fa-satellite-dish fa-2x"></i>
                   </div>
-                  <img alt="OneShield"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPk9TPC90ZXh0Pgo8L3N2Zz4K" />
                 </div>
               </a>
             </div>
+
             <div class="notifications-item">
               <a href="#" target="_blank">
-                <i class="fa fa-robot"></i>
+                <i class="fa fa-seedling"></i>
                 <div class="notifications-content">
                   <div class="ntfct-header">
-                    <strong>MUSEN PLUS Ra Mắt Dịch Vụ Web AI</strong>
+                    <strong>Hệ thống nông nghiệp thông minh Musen Plus triển khai toàn quốc</strong>
+                    <i class="fas fa-seedling fa-2x"></i>
                   </div>
-                  <img alt="Web AI"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iIzBkYTc1NSIvPgo8dGV4dCB4PSIyMCIgeT0iMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkFJPC90ZXh0Pgo8L3N2Zz4K" />
                 </div>
               </a>
             </div>
           </div>
         </div>
+
         <!-- Login -->
         <a href="#" title="Đăng nhập">
           <i class="fa fa-user"></i> Đăng nhập
@@ -140,6 +144,32 @@
                   </a>
                 </div>
               </div>
+              <div class="submenu-section">
+                <h4>Dịch vụ hỗ trợ</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🛠️</div>
+                    <div class="submenu-item-content">
+                      <h5>Bảo trì &amp; Nâng cấp</h5>
+                      <p>Bảo trì định kỳ, nâng cấp phần mềm, thay thế thiết bị.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">👨‍💼</div>
+                    <div class="submenu-item-content">
+                      <h5>Tư vấn &amp; Đào tạo</h5>
+                      <p>Tư vấn giải pháp, đào tạo vận hành hệ thống.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🔧</div>
+                    <div class="submenu-item-content">
+                      <h5>Hỗ trợ kỹ thuật 24/7</h5>
+                      <p>Hỗ trợ từ xa, xử lý sự cố khẩn cấp.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,6 +204,32 @@
                   </a>
                 </div>
               </div>
+              <div class="submenu-section">
+                <h4>Công nghệ nổi bật</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🤖</div>
+                    <div class="submenu-item-content">
+                      <h5>AI &amp; Machine Learning</h5>
+                      <p>Phân tích dữ liệu, dự đoán, tối ưu hoá tự động.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">📡</div>
+                    <div class="submenu-item-content">
+                      <h5>IoT &amp; Connectivity</h5>
+                      <p>LoRaWAN, NB-IoT, 4G/5G, WiFi, Bluetooth.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">☁️</div>
+                    <div class="submenu-item-content">
+                      <h5>Cloud Computing</h5>
+                      <p>AWS IoT, Azure IoT, Google Cloud IoT.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +244,7 @@
                   <a class="submenu-item" href="#">
                     <div class="submenu-icon">📶</div>
                     <div class="submenu-item-content">
-                      <h5>ECO-Gateway</h5>
+                      <h5>HỆ THỐNG PHÁT HIỆN VA CHẠM CHO XE NÂNG</h5>
                       <p>Gateway IoT đa giao thức 4G/Wi-Fi/Ethernet.</p>
                     </div>
                   </a>
@@ -261,6 +317,32 @@
                   </a>
                 </div>
               </div>
+              <div class="submenu-section">
+                <h4>Theo quy mô</h4>
+                <div class="submenu-items">
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏢</div>
+                    <div class="submenu-item-content">
+                      <h5>Dự án lớn</h5>
+                      <p>Triển khai quy mô tỉnh/thành phố, tập đoàn lớn.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏭</div>
+                    <div class="submenu-item-content">
+                      <h5>Dự án vừa</h5>
+                      <p>Phù hợp doanh nghiệp vừa, farm quy mô 5-10ha.</p>
+                    </div>
+                  </a>
+                  <a class="submenu-item" href="#">
+                    <div class="submenu-icon">🏪</div>
+                    <div class="submenu-item-content">
+                      <h5>Dự án nhỏ</h5>
+                      <p>Giải pháp cho hộ gia đình, doanh nghiệp nhỏ.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -319,12 +401,11 @@
           </div>
         </div>
         <!-- Liên hệ -->
-        <a data-i18n="nav.contact" href="#lien-he" id="nav-contact">Liên hệ</a>
+        <!-- <a data-i18n="nav.contact" href="#lien-he" id="nav-contact">Liên hệ</a> -->
       </nav>
       <div>
         <button class="cta" data-i18n="nav.consult" id="btn-consult"
-          onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})">Nhận
-          tư vấn</button>
+          onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})">Liên hệ</button>
         <!-- <a id="btn-login" class="cta login-btn" href="#dang-nhap" data-i18n="nav.login">Đăng nhập</a> -->
         <!-- 🔹 Ô chọn ngôn ngữ kế bên nút Đăng nhập -->
         <select aria-label="Language" class="lang-select" id="language" onchange="changeLanguage(this.value)">
@@ -411,42 +492,42 @@
         <p class="muted" data-i18n="services.subtitle">Từ ý tưởng → nguyên mẫu → sản xuất → vận hành</p>
       </div>
       <div class="cards">
-        <div class="card fade-up">
+        <a href="dv/dv1/dv1.html" class="card fade-up">
           <div aria-hidden="true" class="icon">📡</div>
           <h3 data-i18n="services.items.hw.title">Thiết kế phần cứng</h3>
           <p class="muted" data-i18n="services.items.hw.desc">ESP32/STM32, LoRa/4G/5G, NB-IoT, RS485, Modbus, CAN, đo
             lường công nghiệp.</p>
-        </div>
-        <div class="card fade-up" style="transition-delay:.05s">
+        </a>
+        <a href="dv/dv2/dv2.html" class="card fade-up" style="transition-delay:.05s">
           <div class="icon">🧠</div>
           <h3 data-i18n="services.items.edge.title">AIoT &amp; Edge</h3>
           <p class="muted" data-i18n="services.items.edge.desc">Nhận dạng hình ảnh, phát hiện người/xe, giám sát an
             ninh, phân tích biên.</p>
-        </div>
-        <div class="card fade-up" style="transition-delay:.1s">
+        </a>
+        <a href="dv/dv3/dv3.html" class="card fade-up" style="transition-delay:.1s">
           <div class="icon">☁️</div>
           <h3 data-i18n="services.items.cloud.title">Cloud &amp; Dashboard</h3>
           <p class="muted" data-i18n="services.items.cloud.desc">MQTT/HTTP, dữ liệu thời gian thực, cảnh báo, báo cáo,
             SCADA web.</p>
-        </div>
-        <div class="card fade-up" style="transition-delay:.15s">
+        </a>
+        <a href="dv/dv4/dv4.html" class="card fade-up" style="transition-delay:.15s">
           <div class="icon">🔧</div>
           <h3 data-i18n="services.items.integr.title">Tích hợp hệ thống</h3>
           <p class="muted" data-i18n="services.items.integr.desc">PLC/SCADA, BMS/EMS, toà nhà thông minh, cổng kết nối
             đa giao thức.</p>
-        </div>
-        <div class="card fade-up" style="transition-delay:.2s">
+        </a>
+        <a href="dv/dv5/dv5.html" class="card fade-up" style="transition-delay:.2s">
           <div class="icon">🧪</div>
           <h3 data-i18n="services.items.proto.title">Prototype nhanh</h3>
           <p class="muted" data-i18n="services.items.proto.desc">In 3D, CNC, PCB nhanh, thử nghiệm hiện trường, tinh
             chỉnh theo yêu cầu.</p>
-        </div>
-        <div class="card fade-up" style="transition-delay:.25s">
+        </a>
+        <a href="dv/dv6/dv6.html" class="card fade-up" style="transition-delay:.25s">
           <div class="icon">🛡️</div>
           <h3 data-i18n="services.items.sla.title">Bảo trì &amp; SLA</h3>
           <p class="muted" data-i18n="services.items.sla.desc">Giám sát từ xa, cập nhật OTA, bảo hành tận nơi, cam kết
             dịch vụ.</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -464,12 +545,12 @@
           <p class="muted" data-i18n="solutions.agri.desc">Giám sát pH/DO/EC, nhiệt độ, độ ẩm, mức nước; điều khiển
             bơm/quạt/van tự động; dashboard &amp; cảnh báo SMS/Zalo.</p>
           <div class="grid-3" style="margin-top:12px">
-            <div class="tile farm-bg"><span data-i18n="solutions.agri.tiles.farm">Trại tôm</span><span class="chip"
-                data-i18n="solutions.agri.tiles.farm_val">42 ao</span></div>
-            <div class="tile greenhouse-bg"><span data-i18n="solutions.agri.tiles.greenhouse">Nhà kính</span><span
-                class="chip" data-i18n="solutions.agri.tiles.greenhouse_val">6 khu</span></div>
-            <div class="tile drip-bg"><span data-i18n="solutions.agri.tiles.drip">Tưới nhỏ giọt</span><span class="chip"
-                data-i18n="solutions.agri.tiles.drip_val">IoT</span></div>
+            <a href="gp/gp1/gp1.html" class="tile farm-bg"><span data-i18n="solutions.agri.tiles.farm">Trại tôm</span><span class="chip"
+                data-i18n="solutions.agri.tiles.farm_val">42 ao</span></a>
+            <a href="gp/gp2/gp2.html" class="tile greenhouse-bg"><span data-i18n="solutions.agri.tiles.greenhouse">Nhà kính</span><span
+                class="chip" data-i18n="solutions.agri.tiles.greenhouse_val">6 khu</span></a>
+            <a href="gp/gp3/gp3.html" class="tile drip-bg"><span data-i18n="solutions.agri.tiles.drip">Tưới nhỏ giọt</span><span class="chip"
+                data-i18n="solutions.agri.tiles.drip_val">IoT</span></a>
           </div>
         </div>
         <div class="panel fade-up">
@@ -477,8 +558,8 @@
           <p class="muted" data-i18n="solutions.agri.desc">Giám sát pH/DO/EC, nhiệt độ, độ ẩm, mức nước; điều khiển
             bơm/quạt/van tự động; dashboard &amp; cảnh báo SMS/Zalo.</p>
           <div style="margin-top:12px; display: flex; gap:12px">
-            <div class="tile building-bg" style="flex:1"><span>BMS/EMS</span><span class="chip">Smart</span></div>
-            <div class="tile energy-bg" style="flex:1"><span>Energy</span><span class="chip">IoT</span></div>
+            <a href="gp/gp4/gp4.html" class="tile building-bg" style="flex:1"><span>BMS/EMS</span><span class="chip">Smart</span></a>
+            <a href="gp/gp5/gp5.html" class="tile energy-bg" style="flex:1"><span>Energy</span><span class="chip">IoT</span></a>
           </div>
         </div>
       </div>
@@ -492,59 +573,214 @@
         <a class="btn" data-i18n="products.catalog" href="#">Tải catalogue</a>
       </div>
       <div class="cards">
-        <div class="card fade-up">
+        <!-- 1 -->
+        <div class="card fade-up" onclick="window.location.href='sp/sp1/sp1.html'" style="cursor:pointer">
           <h3 data-i18n="products.gw.title">ECO-Gateway</h3>
           <p class="muted" data-i18n="products.gw.desc"
-            title="Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.">Gateway IoT đa
-            giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.</p>
-          <div class="tile gw-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.gw.img">Ảnh minh
-              hoạ</span><span class="chip" data-i18n="products.gw.tag">v1.2</span></div>
+            title="Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9–36VDC.">
+            Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9–36VDC.
+          </p>
+          <div class="tile im1-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.gw.img">Ảnh minh hoạ</span><span class="chip"
+              data-i18n="products.gw.tag">v1.2</span>
+          </div>
         </div>
-        <div class="card fade-up" style="transition-delay:.05s">
+
+
+        <!-- 2 -->
+        <div class="card fade-up" style="transition-delay:.05s; cursor:pointer"
+          onclick="window.location.href='sp/sp2/sp2.html'">
           <h3 data-i18n="products.node.title">ECO-Node</h3>
           <p class="muted" data-i18n="products.node.desc"
-            title="Cảm biến không dây LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.">Cảm biến không dây
-            LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.</p>
-          <div class="tile node-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.node.img">Ảnh
-              minh hoạ</span><span class="chip" data-i18n="products.node.tag">IP65</span></div>
+            title="Cảm biến không dây LoRa/NB-IoT đo nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.">
+            Cảm biến không dây LoRa/NB-IoT đo nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.
+          </p>
+          <div class="tile im2-bg" style="aspect-ratio:16/9; margin-top:10px">
+            <span data-i18n="products.node.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.node.tag">IP65</span>
+          </div>
         </div>
-        <div class="card fade-up" style="transition-delay:.1s">
+
+
+        <!-- 3 -->
+        <div class="card fade-up" style="transition-delay:.1s; cursor:pointer"
+          onclick="window.location.href='sp/sp3/sp3.html'">
           <h3 data-i18n="products.vision.title">ECO-Vision</h3>
           <p class="muted" data-i18n="products.vision.desc"
-            title="Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.">Hệ thống camera AI nhận
-            diện người/xe, theo dõi vùng cấm, đếm lưu lượng.</p>
-          <div class="tile vision-bg" style="aspect-ratio:16/9;margin-top:10px"><span
-              data-i18n="products.vision.img">Ảnh minh hoạ</span><span class="chip"
-              data-i18n="products.vision.tag">AIoT</span></div>
+            title="Hệ thống camera AI nhận diện người/xe, đếm lưu lượng, theo dõi vùng cấm.">
+            Hệ thống camera AI nhận diện người/xe, đếm lưu lượng, theo dõi vùng cấm.
+          </p>
+          <div class="tile im3-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.vision.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.vision.tag">AIoT</span>
+          </div>
         </div>
-        <div class="card fade-up">
-          <h3 data-i18n="products.gw.title">ECO-Gateway</h3>
-          <p class="muted" data-i18n="products.gw.desc"
-            title="Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.">Gateway IoT đa
-            giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.</p>
-          <div class="tile gw-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.gw.img">Ảnh minh
-              hoạ</span><span class="chip" data-i18n="products.gw.tag">v1.2</span></div>
+
+        <!-- 4 -->
+        <div class="card fade-up" style="transition-delay:.15s; cursor:pointer"
+          onclick="window.location.href='sp/sp4/sp4.html'">
+          <h3>ECO-Power</h3>
+          <p class="muted" title="Thiết bị đo và giám sát năng lượng: điện áp, dòng, công suất, hỗ trợ Modbus-RTU/TCP.">
+            Thiết bị đo và giám sát năng lượng: điện áp, dòng, công suất, hỗ trợ Modbus-RTU/TCP.
+          </p>
+          <div class="tile im4-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Energy</span>
+          </div>
         </div>
-        <div class="card fade-up" style="transition-delay:.05s">
-          <h3 data-i18n="products.node.title">ECO-Node</h3>
-          <p class="muted" data-i18n="products.node.desc"
-            title="Cảm biến không dây LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.">Cảm biến không dây
-            LoRa/NB-IoT: nhiệt ẩm, pH, DO, mức nước, dòng điện, rung.</p>
-          <div class="tile node-bg" style="aspect-ratio:16/9;margin-top:10px"><span data-i18n="products.node.img">Ảnh
-              minh hoạ</span><span class="chip" data-i18n="products.node.tag">IP65</span></div>
+
+        <!-- 5 -->
+        <div class="card fade-up" style="transition-delay:.2s; cursor:pointer"
+          onclick="window.location.href='sp/sp5/sp5.html'">
+          <h3>ECO-Dashboard</h3>
+          <p class="muted"
+            title="Nền tảng SCADA web hiển thị dữ liệu realtime, biểu đồ, cảnh báo, điều khiển thiết bị.">
+            Nền tảng SCADA web hiển thị dữ liệu realtime, biểu đồ, cảnh báo, điều khiển thiết bị.
+          </p>
+          <div class="tile im5-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Cloud</span>
+          </div>
         </div>
-        <div class="card fade-up" style="transition-delay:.1s">
-          <h3 data-i18n="products.vision.title">ECO-Vision</h3>
-          <p class="muted" data-i18n="products.vision.desc"
-            title="Hệ thống camera AI nhận diện người/xe, theo dõi vùng cấm, đếm lưu lượng.">Hệ thống camera AI nhận
-            diện người/xe, theo dõi vùng cấm, đếm lưu lượng.</p>
-          <div class="tile vision-bg" style="aspect-ratio:16/9;margin-top:10px"><span
-              data-i18n="products.vision.img">Ảnh minh hoạ</span><span class="chip"
-              data-i18n="products.vision.tag">AIoT</span></div>
+
+        <!-- 6 -->
+        <div class="card fade-up" style="transition-delay:.25s; cursor:pointer"
+          onclick="window.location.href='sp/sp6/sp6.html'">
+          <h3>ECO-Control</h3>
+          <p class="muted"
+            title="Bộ điều khiển IoT thông minh hỗ trợ tự động hoá bơm/quạt/van, lập lịch và điều khiển từ xa.">
+            Bộ điều khiển IoT thông minh hỗ trợ tự động hoá bơm/quạt/van, lập lịch và điều khiển từ xa.
+          </p>
+          <div class="tile im6-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Control</span>
+          </div>
         </div>
+
+        <!-- 7 -->
+        <div class="card fade-up" style="transition-delay:.3s; cursor:pointer"
+          onclick="window.location.href='sp/sp7/sp7.html'">
+          <h3>ECO-Track</h3>
+          <p class="muted"
+            title="Giải pháp theo dõi và quản lý đội xe vận tải với GPS, cảm biến nhiệt độ, và cảnh báo thời gian thực.">
+            Giải pháp theo dõi và quản lý đội xe vận tải với GPS, cảm biến nhiệt độ, và cảnh báo thời gian thực.
+          </p>
+          <div class="tile im7-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Logistics</span>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card fade-up" style="transition-delay:.35s; cursor:pointer"
+          onclick="window.location.href='sp/sp8/sp8.html'">
+          <h3>ECO-Farm</h3>
+          <p class="muted"
+            title="Hệ thống quản lý trang trại thông minh tích hợp cảm biến, điều khiển tự động và phân tích dữ liệu.">
+            Hệ thống quản lý trang trại thông minh tích hợp cảm biến, điều khiển tự động và phân tích dữ liệu.
+          </p>
+          <div class="tile im8-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Agriculture</span>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card fade-up" style="transition-delay:.4s; cursor:pointer"
+          onclick="window.location.href='sp/sp9/sp9.html'">
+          <h3>ECO-Guard</h3>
+          <p class="muted"
+            title="Hệ thống an ninh thông minh với camera AI, cảm biến chuyển động và kiểm soát truy cập từ xa.">
+            Hệ thống an ninh thông minh với camera AI, cảm biến chuyển động và kiểm soát truy cập từ xa.
+          </p>
+          <div class="tile im9-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span>Ảnh minh hoạ</span><span class="chip">Security</span>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card fade-up" style="transition-delay:.45s; cursor:pointer"
+          onclick="window.location.href='sp/sp10/sp10.html'">
+          <h3 data-i18n="products.parking.title">ECO-Smart Parking</h3>
+          <p class="muted" data-i18n="products.parking.desc"
+            title="Hệ thống quản lý bãi đỗ xe thông minh với nhận diện biển số, định vị vị trí đỗ và thanh toán tự động.">
+            Hệ thống quản lý bãi đỗ xe thông minh với nhận diện biển số, định vị vị trí đỗ và thanh toán tự động.
+          </p>
+          <div class="tile im10-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.parking.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.parking.tag">Parking</span>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card fade-up" style="transition-delay:.5s; cursor:pointer"
+          onclick="window.location.href='sp/sp11/sp11.html'">
+          <h3 data-i18n="products.water.title">ECO-WaterTech</h3>
+          <p class="muted" data-i18n="products.water.desc"
+            title="Giải pháp giám sát và quản lý chất lượng nước với cảm biến pH, độ đục, DO, nhiệt độ và điều khiển xử lý tự động.">
+            Giải pháp giám sát và quản lý chất lượng nước với cảm biến pH, độ đục, DO, nhiệt độ và điều khiển xử lý tự động.
+          </p>
+          <div class="tile im11-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.water.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.water.tag">Water</span>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card fade-up" style="transition-delay:.55s; cursor:pointer"
+          onclick="window.location.href='sp/sp12/sp12.html'">
+          <h3 data-i18n="products.air.title">ECO-AirQuality</h3>
+          <p class="muted" data-i18n="products.air.desc"
+            title="Hệ thống quan trắc chất lượng không khí với cảm biến PM2.5, CO2, VOC, nhiệt độ, độ ẩm và cảnh báo tự động.">
+            Hệ thống quan trắc chất lượng không khí với cảm biến PM2.5, CO2, VOC, nhiệt độ, độ ẩm và cảnh báo tự động.
+          </p>
+          <div class="tile im12-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.air.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.air.tag">Air</span>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card fade-up" style="transition-delay:.6s; cursor:pointer"
+          onclick="window.location.href='sp/sp13/sp13.html'">
+          <h3 data-i18n="products.waste.title">ECO-WasteManage</h3>
+          <p class="muted" data-i18n="products.waste.desc"
+            title="Giải pháp quản lý chất thải thông minh với cảm biến mức đầy, định vị GPS và tối ưu hoá lộ trình thu gom.">
+            Giải pháp quản lý chất thải thông minh với cảm biến mức đầy, định vị GPS và tối ưu hoá lộ trình thu gom.
+          </p>
+          <div class="tile im13-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.waste.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.waste.tag">Waste</span>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card fade-up" style="transition-delay:.65s; cursor:pointer"
+          onclick="window.location.href='sp/sp14/sp14.html'">
+          <h3 data-i18n="products.health.title">ECO-HealthCare</h3>
+          <p class="muted" data-i18n="products.health.desc"
+            title="Hệ thống giám sát sức khỏe từ xa với cảm biến sinh hiệu, theo dõi thuốc và cảnh báo khẩn cấp cho người cao tuổi.">
+            Hệ thống giám sát sức khỏe từ xa với cảm biến sinh hiệu, theo dõi thuốc và cảnh báo khẩn cấp cho người cao tuổi.
+          </p>
+          <div class="tile im14-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.health.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.health.tag">Health</span>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card fade-up" style="transition-delay:.7s; cursor:pointer"
+          onclick="window.location.href='sp/sp15/sp15.html'">
+          <h3 data-i18n="products.light.title">ECO-SmartLight</h3>
+          <p class="muted" data-i18n="products.light.desc"
+            title="Giải pháp chiếu sáng thông minh với điều khiển theo thời gian thực, cảm biến chuyển động và tối ưu tiết kiệm năng lượng.">
+            Giải pháp chiếu sáng thông minh với điều khiển theo thời gian thực, cảm biến chuyển động và tối ưu tiết kiệm năng lượng.
+          </p>
+          <div class="tile im15-bg" style="aspect-ratio:16/9;margin-top:10px">
+            <span data-i18n="products.light.img">Ảnh minh hoạ</span>
+            <span class="chip" data-i18n="products.light.tag">Lighting</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
   <!-- Projects / Stats -->
   <section id="du-an">
     <div class="container">
@@ -576,8 +812,8 @@
   <section id="tech-platforms">
     <div class="container">
       <div class="section-head">
-<h2 data-i18n="platform.title">Nền tảng & Công nghệ Musen Plus</h2>
-<p data-i18n="platform.subtitle">Các hệ sinh thái phần mềm, phần cứng và giao thức mà Musen Plus hỗ trợ.</p>
+        <h2 data-i18n="tech.title">Nền tảng & Công nghệ Musen Plus</h2>
+        <p data-i18n="tech.subtitle">Các hệ sinh thái phần mềm, phần cứng và giao thức mà Musen Plus hỗ trợ.</p>
       </div>
 
       <div class="tech-grid">
@@ -712,24 +948,24 @@
       </div>
     </div>
     <!-- Footer bottom -->
-<div style="text-align:center; margin-top:20px;" class="footer-bottom">
-  <div class="container">
-    <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT cho Nông nghiệp, Công nghiệp và Dịch vụ.</p>
-    
-    <div class="footer-address">
-      51/6/6 Nguyễn Văn Giáp, Phường Bình Trưng Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
-    </div>
+    <div style="text-align:center; margin-top:20px;" class="footer-bottom">
+      <div class="container">
+        <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT cho Nông nghiệp, Công nghiệp và Dịch vụ.</p>
 
-    <div class="footer-hours">
-      Thời gian hoạt động: Thứ 2 – Thứ 7 (8.30-18.30) Chủ nhật (Closed)
-    </div>
+        <div class="footer-address">
+          51/6/6 Nguyễn Văn Giáp, Phường Bình Trưng Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+        </div>
 
-    <div class="footer-contact">
-      <a href="mailto:musenplus2@gmail.com">Email: musenplus2@gmail.com</a>
-      <a href="tel:+84338812063">Hotline: +84 338 812 063</a>
+        <div class="footer-hours">
+          Thời gian hoạt động: Thứ 2 – Thứ 7 (8.30-18.30) Chủ nhật (Closed)
+        </div>
+
+        <div class="footer-contact">
+          <a href="mailto:musenplus2@gmail.com">Email: musenplus2@gmail.com</a>
+          <a href="tel:+84338812063">Hotline: +84 338 812 063</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   </footer>
   <script>
     // simple appear on scroll
@@ -1107,6 +1343,68 @@
 
     const dict = {
       vi: {
+        // Sản phẩm 4-9
+        'products.power.title': 'ECO-Power',
+        'products.power.desc': 'Thiết bị đo và giám sát năng lượng: điện áp, dòng, công suất, hỗ trợ Modbus-RTU/TCP.',
+        'products.power.img': 'Ảnh minh hoạ',
+        'products.power.tag': 'Năng lượng',
+
+        'products.dashboard.title': 'ECO-Dashboard',
+        'products.dashboard.desc': 'Nền tảng SCADA web hiển thị dữ liệu realtime, biểu đồ, cảnh báo, điều khiển thiết bị.',
+        'products.dashboard.img': 'Ảnh minh hoạ',
+        'products.dashboard.tag': 'Điều khiển',
+
+        'products.control.title': 'ECO-Control',
+        'products.control.desc': 'Bộ điều khiển IoT thông minh hỗ trợ tự động hoá bơm/quạt/van, lập lịch và điều khiển từ xa.',
+        'products.control.img': 'Ảnh minh hoạ',
+        'products.control.tag': 'Điều khiển',
+
+        'products.track.title': 'ECO-Track',
+        'products.track.desc': 'Giải pháp theo dõi và quản lý đội xe vận tải với GPS, cảm biến nhiệt độ, và cảnh báo thời gian thực.',
+        'products.track.img': 'Ảnh minh hoạ',
+        'products.track.tag': 'Vận tải',
+
+        'products.farm.title': 'ECO-Farm',
+        'products.farm.desc': 'Hệ thống quản lý trang trại thông minh tích hợp cảm biến, điều khiển tự động và phân tích dữ liệu.',
+        'products.farm.img': 'Ảnh minh hoạ',
+        'products.farm.tag': 'Nông nghiệp',
+
+        'products.guard.title': 'ECO-Guard',
+        'products.guard.desc': 'Hệ thống an ninh thông minh với camera AI, cảm biến chuyển động và kiểm soát truy cập từ xa.',
+        'products.guard.img': 'Ảnh minh hoạ',
+        'products.guard.tag': 'An ninh',
+
+        // Sản phẩm mới thêm
+        'products.parking.title': 'ECO-Smart Parking',
+        'products.parking.desc': 'Hệ thống quản lý bãi đỗ xe thông minh với nhận diện biển số, định vị vị trí đỗ và thanh toán tự động.',
+        'products.parking.img': 'Ảnh minh hoạ',
+        'products.parking.tag': 'Bãi đỗ',
+
+        'products.water.title': 'ECO-WaterTech',
+        'products.water.desc': 'Giải pháp giám sát và quản lý chất lượng nước với cảm biến pH, độ đục, DO, nhiệt độ và điều khiển xử lý tự động.',
+        'products.water.img': 'Ảnh minh hoạ',
+        'products.water.tag': 'Nước',
+
+        'products.air.title': 'ECO-AirQuality',
+        'products.air.desc': 'Hệ thống quan trắc chất lượng không khí với cảm biến PM2.5, CO2, VOC, nhiệt độ, độ ẩm và cảnh báo tự động.',
+        'products.air.img': 'Ảnh minh hoạ',
+        'products.air.tag': 'Không khí',
+
+        'products.waste.title': 'ECO-WasteManage',
+        'products.waste.desc': 'Giải pháp quản lý chất thải thông minh với cảm biến mức đầy, định vị GPS và tối ưu hoá lộ trình thu gom.',
+        'products.waste.img': 'Ảnh minh hoạ',
+        'products.waste.tag': 'Chất thải',
+
+        'products.health.title': 'ECO-HealthCare',
+        'products.health.desc': 'Hệ thống giám sát sức khỏe từ xa với cảm biến sinh hiệu, theo dõi thuốc và cảnh báo khẩn cấp cho người cao tuổi.',
+        'products.health.img': 'Ảnh minh hoạ',
+        'products.health.tag': 'Y tế',
+
+        'products.light.title': 'ECO-SmartLight',
+        'products.light.desc': 'Giải pháp chiếu sáng thông minh với điều khiển theo thời gian thực, cảm biến chuyển động và tối ưu tiết kiệm năng lượng.',
+        'products.light.img': 'Ảnh minh hoạ',
+        'products.light.tag': 'Chiếu sáng',
+
         // ARIA
         'nav.home_aria': 'Trang chủ',
         'nav.main_aria': 'Điều hướng chính',
@@ -1119,7 +1417,7 @@
         'nav.projects': 'Dự án',
         'nav.website': 'Website',
         'nav.contact': 'Liên hệ',
-        'nav.consult': 'Nhận tư vấn',
+        'nav.consult': 'Liên hệ',
         'nav.login': 'Đăng nhập',
         // SUBMENU
         'submenu.website.services.title': 'Dịch vụ website',
@@ -1182,7 +1480,7 @@
         // PRODUCTS
         'products.title': 'Sản phẩm',
         'products.catalog': 'Tải catalogue',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'HỆ THỐNG PHÁT HIỆN VA CHẠM CHO XE NÂNG',
         'products.gw.desc': 'Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.',
         'products.gw.img': 'Ảnh minh hoạ',
         'products.gw.tag': 'v1.2',
@@ -1268,12 +1566,77 @@
         'footer.copyright': 'Copyright © 2007 MUSEN PLUS',
         'footer.company_info': 'Công ty TNHH Phần mềm MUSEN PLUS - Mã số thuế: 0103581701 cấp ngày: 11/03/2009 tại Phòng đăng ký kinh doanh Sở Kế hoạch và Đầu tư Thành phố Hà Nội - Đại diện: Ông Trần Kiên',
         'footer.hcmc_address': '51/6/6 Nguyễn Văn Giáp, Phường Bình Trưng Đông, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+        // Tech Platforms
+        'tech.title': 'Nền tảng & Công nghệ Musen Plus',
+        'tech.subtitle': 'Các hệ sinh thái phần mềm, phần cứng và giao thức mà Musen Plus hỗ trợ.',
         // Alerts
         'alerts.thanks': 'Cảm ơn',
         'alerts.contact_via': 'Chúng tôi sẽ liên hệ qua',
       },
 
       en: {
+        // Products 4-9
+        'products.power.title': 'ECO-Power',
+        'products.power.desc': 'Energy measurement and monitoring device: voltage, current, power, with Modbus-RTU/TCP support.',
+        'products.power.img': 'Illustration',
+        'products.power.tag': 'Energy',
+
+        'products.dashboard.title': 'ECO-Dashboard',
+        'products.dashboard.desc': 'Web SCADA platform displaying realtime data, charts, alerts, and device control.',
+        'products.dashboard.img': 'Illustration',
+        'products.dashboard.tag': 'Cloud',
+
+        'products.control.title': 'ECO-Control',
+        'products.control.desc': 'Smart IoT controller supporting pump/fan/valve automation, scheduling and remote control.',
+        'products.control.img': 'Illustration',
+        'products.control.tag': 'Control',
+
+        'products.track.title': 'ECO-Track',
+        'products.track.desc': 'Fleet management solution with GPS tracking, temperature sensors, and real-time alerts.',
+        'products.track.img': 'Illustration',
+        'products.track.tag': 'Logistics',
+
+        'products.farm.title': 'ECO-Farm',
+        'products.farm.desc': 'Smart farm management system with integrated sensors, automated control and data analytics.',
+        'products.farm.img': 'Illustration',
+        'products.farm.tag': 'Agriculture',
+
+        'products.guard.title': 'ECO-Guard',
+        'products.guard.desc': 'Smart security system with AI cameras, motion sensors and remote access control.',
+        'products.guard.img': 'Illustration',
+        'products.guard.tag': 'Security',
+
+        // New products
+        'products.parking.title': 'ECO-Smart Parking',
+        'products.parking.desc': 'Smart parking management system with license plate recognition, parking spot location and automatic payment.',
+        'products.parking.img': 'Illustration',
+        'products.parking.tag': 'Parking',
+
+        'products.water.title': 'ECO-WaterTech',
+        'products.water.desc': 'Water quality monitoring and management solution with pH, turbidity, DO, temperature sensors and automated treatment control.',
+        'products.water.img': 'Illustration',
+        'products.water.tag': 'Water',
+
+        'products.air.title': 'ECO-AirQuality',
+        'products.air.desc': 'Air quality monitoring system with PM2.5, CO2, VOC sensors, temperature, humidity monitoring and automatic alerts.',
+        'products.air.img': 'Illustration',
+        'products.air.tag': 'Air',
+
+        'products.waste.title': 'ECO-WasteManage',
+        'products.waste.desc': 'Smart waste management solution with fill-level sensors, GPS tracking and collection route optimization.',
+        'products.waste.img': 'Illustration',
+        'products.waste.tag': 'Waste',
+
+        'products.health.title': 'ECO-HealthCare',
+        'products.health.desc': 'Remote health monitoring system with vital signs sensors, medication tracking and emergency alerts for elderly care.',
+        'products.health.img': 'Illustration',
+        'products.health.tag': 'Health',
+
+        'products.light.title': 'ECO-SmartLight',
+        'products.light.desc': 'Smart lighting solution with real-time control, motion sensors and energy optimization.',
+        'products.light.img': 'Illustration',
+        'products.light.tag': 'Lighting',
+
         // ARIA
         'nav.home_aria': 'Home',
         'nav.main_aria': 'Primary navigation',
@@ -1346,10 +1709,13 @@
         'solutions.building.li1': 'BMS/EMS, multi-channel metering, consumption optimization.',
         'solutions.building.li2': 'Genset monitoring, ATS, incident alerts.',
         'solutions.building.li3': 'Security solutions, AI camera recognition.',
+        // Tech Platforms
+        'tech.title': 'Musen Plus Technology Platforms',
+        'tech.subtitle': 'Software, hardware and protocol ecosystems supported by Musen Plus.',
         // PRODUCTS
         'products.title': 'Products',
         'products.catalog': 'Download catalog',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'Forklift Collision Detection System',
         'products.gw.desc': 'Multi-protocol IoT gateway (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, 9–36VDC supply.',
         'products.gw.img': 'Illustration',
         'products.gw.tag': 'v1.2',
@@ -1441,6 +1807,68 @@
       },
 
       jp: {
+        // 製品4-9
+        'products.power.title': 'ECOパワー',
+        'products.power.desc': 'エネルギー測定・監視デバイス：電圧、電流、電力、Modbus-RTU/TCPサポート。',
+        'products.power.img': 'イラスト',
+        'products.power.tag': 'エネルギー',
+
+        'products.dashboard.title': 'ECOダッシュボード',
+        'products.dashboard.desc': 'リアルタイムデータ、チャート、アラート、デバイス制御を表示するWebSCADAプラットフォーム。',
+        'products.dashboard.img': 'イラスト',
+        'products.dashboard.tag': 'クラウド',
+
+        'products.control.title': 'ECOコントロール',
+        'products.control.desc': 'ポンプ/ファン/バルブの自動化、スケジューリング、リモート制御をサポートするスマートIoTコントローラ。',
+        'products.control.img': 'イラスト',
+        'products.control.tag': '制御',
+
+        'products.track.title': 'ECOトラック',
+        'products.track.desc': 'GPSトラッキング、温度センサー、リアルタイムアラートを備えた車両管理ソリューション。',
+        'products.track.img': 'イラスト',
+        'products.track.tag': '物流',
+
+        'products.farm.title': 'ECOファーム',
+        'products.farm.desc': 'センサー統合、自動制御、データ分析を備えたスマート農場管理システム。',
+        'products.farm.img': 'イラスト',
+        'products.farm.tag': '農業',
+
+        'products.guard.title': 'ECOガード',
+        'products.guard.desc': 'AIカメラ、モーションセンサー、リモートアクセス制御を備えたスマートセキュリティシステム。',
+        'products.guard.img': 'イラスト',
+        'products.guard.tag': 'セキュリティ',
+
+        // 新製品
+        'products.parking.title': 'ECOスマートパーキング',
+        'products.parking.desc': 'ナンバープレート認識、駐車場所特定、自動支払いを備えたスマート駐車場管理システム。',
+        'products.parking.img': 'イラスト',
+        'products.parking.tag': '駐車場',
+
+        'products.water.title': 'ECOウォーターテック',
+        'products.water.desc': 'pH、濁度、DO、温度センサーと自動処理制御を備えた水質監視・管理ソリューション。',
+        'products.water.img': 'イラスト',
+        'products.water.tag': '水質',
+
+        'products.air.title': 'ECOエアクオリティ',
+        'products.air.desc': 'PM2.5、CO2、VOCセンサー、温度、湿度モニタリングと自動警報を備えた空気質監視システム。',
+        'products.air.img': 'イラスト',
+        'products.air.tag': '空気',
+
+        'products.waste.title': 'ECOウェイストマネージ',
+        'products.waste.desc': '充填レベルセンサー、GPS追跡、収集ルート最適化を備えたスマート廃棄物管理ソリューション。',
+        'products.waste.img': 'イラスト',
+        'products.waste.tag': '廃棄物',
+
+        'products.health.title': 'ECOヘルスケア',
+        'products.health.desc': 'バイタルサインセンサー、服薬管理、高齢者向け緊急警報を備えた遠隔健康監視システム。',
+        'products.health.img': 'イラスト',
+        'products.health.tag': '健康',
+
+        'products.light.title': 'ECOスマートライト',
+        'products.light.desc': 'リアルタイム制御、モーションセンサー、省エネ最適化を備えたスマート照明ソリューション。',
+        'products.light.img': 'イラスト',
+        'products.light.tag': '照明',
+
         // ARIA
         'nav.home_aria': 'ホーム',
         'nav.main_aria': 'メインナビゲーション',
@@ -1516,7 +1944,7 @@
         // PRODUCTS
         'products.title': '製品',
         'products.catalog': 'カタログをダウンロード',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'フォークリフト衝突検知システム (Fōkurifuto shōtotsu kenchi shisutemu)',
         'products.gw.desc': 'マルチプロトコルIoTゲートウェイ（MQTT/HTTP/Modbus）、4G/LTE、Wi-Fi、Ethernet、9–36VDC給電。',
         'products.gw.img': 'イメージ',
         'products.gw.tag': 'v1.2',
@@ -1602,6 +2030,9 @@
         'footer.copyright': 'Copyright © 2007 MUSEN PLUS - ベトナム・国際ドメイン登録機関',
         'footer.company_info': 'MUSEN PLUSソフトウェア株式会社 - 税務番号: 0103581701 発行日: 2009年3月11日 ハノイ計画投資局 - 代表者: チャン・キエン氏',
         'footer.hcmc_address': 'ホーチミン市: 40 Hoang Viet, Tan Son Nhat Ward, HCMC',
+        // Tech Platforms
+        'tech.title': 'Musen Plusのテクノロジープラットフォーム',
+        'tech.subtitle': 'Musen Plusがサポートするソフトウェア、ハードウェア、プロトコルのエコシステム',
         // Alerts
         'alerts.thanks': 'ありがとうございます',
         'alerts.contact_via': '次の連絡先にご連絡します',

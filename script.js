@@ -100,7 +100,7 @@
         // PRODUCTS
         'products.title': 'Sản phẩm',
         'products.catalog': 'Tải catalogue',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'SP1',
         'products.gw.desc': 'Gateway IoT đa giao thức (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, nguồn 9-36VDC.',
         'products.gw.img': 'Ảnh minh hoạ',
         'products.gw.tag': 'v1.2',
@@ -220,7 +220,7 @@
         // PRODUCTS
         'products.title': 'Products',
         'products.catalog': 'Download catalog',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'SP1',
         'products.gw.desc': 'Multi-protocol IoT gateway (MQTT/HTTP/Modbus), 4G/LTE, Wi-Fi, Ethernet, 9–36VDC supply.',
         'products.gw.img': 'Illustration',
         'products.gw.tag': 'v1.2',
@@ -340,7 +340,7 @@
         // PRODUCTS
         'products.title': '製品',
         'products.catalog': 'カタログをダウンロード',
-        'products.gw.title': 'ECO-Gateway',
+        'products.gw.title': 'SP1',
         'products.gw.desc': 'マルチプロトコルIoTゲートウェイ（MQTT/HTTP/Modbus）、4G/LTE、Wi-Fi、Ethernet、9–36VDC給電。',
         'products.gw.img': 'イメージ',
         'products.gw.tag': 'v1.2',

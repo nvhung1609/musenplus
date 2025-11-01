@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giải pháp IoT giám sát phương tiện thông minh | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./dv5.css" />
+  <script src="./dv5.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html" aria-label="Trang chủ">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> musenplus2@gmail.com</a>
+        <a href="tel:0338812063"><i class="fa-solid fa-phone"></i> 0338812063</a>
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-truck-fast"></i> Giải pháp giám sát phương tiện thông minh</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-satellite-dish"></i> Hệ thống GPS + IoT cập nhật thế hệ mới</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-route"></i> Tối ưu vận hành logistics bằng AI</a></div>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu" aria-label="Chính">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Giải pháp IoT giám sát phương tiện thông minh</h1>
+      <p class="lead">
+        Giải pháp quản lý và giám sát phương tiện vận tải theo thời gian thực – kết hợp GPS, cảm biến và nền tảng IoT để tối ưu hiệu suất và an toàn vận hành.
+      </p>
+
+      <img class="product-img" src="../image/smart-vehicle-iot.jpg" alt="Giải pháp IoT giám sát phương tiện" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Smart Vehicle IoT</strong> là hệ thống giám sát phương tiện thông minh của Musen Plus, 
+        giúp doanh nghiệp vận tải, logistics và dịch vụ quản lý đội xe hiệu quả hơn. 
+        Hệ thống cung cấp dữ liệu GPS, trạng thái động cơ, nhiên liệu, hành vi lái xe và các cảnh báo an toàn theo thời gian thực.
+      </p>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Thiết bị định vị IoT:</strong> GPS/4G, cảm biến rung, tốc độ, nhiên liệu, nhiệt độ thùng xe.</li>
+        <li><strong>Gateway AI Box Plus:</strong> Thu thập dữ liệu từ CAN bus, RS485 và truyền lên cloud qua MQTT/HTTP.</li>
+        <li><strong>Musen Cloud:</strong> Nền tảng trực tuyến hiển thị bản đồ, hành trình, báo cáo và cảnh báo.</li>
+        <li><strong>Ứng dụng di động:</strong> Theo dõi xe, trạng thái, thông tin hành trình mọi lúc, mọi nơi.</li>
+      </ul>
+
+      <h3>Tính năng nổi bật</h3>
+      <ul>
+        <li>Định vị GPS thời gian thực, cập nhật mỗi 5 giây</li>
+        <li>Ghi lại lịch sử hành trình và tốc độ</li>
+        <li>Cảnh báo vượt tốc, dừng đỗ bất thường, va chạm</li>
+        <li>Giám sát mức nhiên liệu và hiệu suất xe</li>
+        <li>Phân tích hành vi lái xe bằng AI</li>
+        <li>Quản lý đội xe trên bản đồ tương tác Musen Cloud</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>GPS + 4G LTE + Wi-Fi, độ chính xác định vị ±2m</li>
+        <li>Hỗ trợ CAN bus, RS485, MQTT, HTTP, OTA</li>
+        <li>Bộ xử lý: ESP32-S3 Dual-core, 16MB PSRAM</li>
+        <li>Nguồn: DC 9–36V, IP65 chống nước, chống rung</li>
+        <li>Tích hợp cảm biến: gia tốc, nhiệt độ, nhiên liệu, cửa xe</li>
+      </ul>
+
+      <h3>Ứng dụng thực tế</h3>
+      <ul>
+        <li>Quản lý đội xe logistics, vận tải hàng hóa</li>
+        <li>Xe container, xe lạnh, xe thu gom rác, xe chuyên dụng</li>
+        <li>Giám sát xe công trình, xe nội bộ trong khu công nghiệp</li>
+        <li>Đơn vị quản lý giao thông và an toàn vận hành</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Giảm 25% chi phí vận hành nhờ tối ưu hành trình</li>
+        <li>Tăng hiệu suất đội xe, giảm hao hụt nhiên liệu</li>
+        <li>Phát hiện sớm hành vi rủi ro – lái xe ẩu, va chạm, dừng đỗ bất thường</li>
+        <li>Hỗ trợ báo cáo theo ISO 39001 về an toàn giao thông</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn muốn quản lý đội xe bằng IoT?</h4>
+          <p class="muted">Liên hệ Musen Plus để được tư vấn giải pháp giám sát phương tiện phù hợp.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT cho logistics và quản lý phương tiện – tối ưu vận hành, an toàn, hiệu quả, kết nối toàn diện.</p>
+      </div>
+      <div>
+        <h4>Ứng dụng</h4>
+        <ul>
+          <li>Quản lý đội xe</li>
+          <li>Giám sát hành trình</li>
+          <li>Cảnh báo an toàn</li>
+          <li>Tối ưu hóa logistics</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ</h4>
+        <ul>
+          <li>Gateway AI Box Plus</li>
+          <li>GPS + 4G + MQTT Cloud</li>
+          <li>Musen Cloud Dashboard</li>
+          <li>AI phân tích hành vi lái xe</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT giám sát phương tiện & logistics thông minh.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

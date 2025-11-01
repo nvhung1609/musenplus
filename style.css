@@ -141,7 +141,7 @@ img {
 .top-header-menu {
   display: flex;
   align-items: center;
-  gap: 16px
+  gap: 16px;
 }
 
 .top-header-menu a {
@@ -151,12 +151,12 @@ img {
   gap: 6px;
   padding: 6px 12px;
   border-radius: 4px;
-  transition: all .2s ease
+  transition: all 0.2s ease;
 }
 
 .top-header-menu a:hover {
   color: var(--brand);
-  background: rgba(14, 165, 233, .08)
+  background: rgba(14, 165, 233, 0.08);
 }
 
 .top-header-menu i {
@@ -286,6 +286,20 @@ header {
   border-radius: 10px;
   object-fit: cover;
   vertical-align: middle
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  color: var(--blue-dark)
+}
+
+.logo img {
+  height: 28px;
+  width: 28px;
+  border-radius: 8px
 }
 
 .logo span {
@@ -707,37 +721,90 @@ section {
   background-position: center
 }
 
-/* tile backgrounds (kept as-is) */
-.tile.gw-bg {
+/* Giải pháp tiêu biểu */
+.tile.farm-bg {
   background-image: url('image/1.jpg')
 }
 
-.tile.node-bg {
+.tile.greenhouse-bg {
   background-image: url('image/2.jpg')
 }
 
-.tile.vision-bg {
+.tile.drip-bg {
   background-image: url('image/3.jpg')
 }
 
-.tile.farm-bg {
+.tile.building-bg {
   background-image: url('image/4.jpg')
 }
 
-.tile.greenhouse-bg {
+.tile.energy-bg {
   background-image: url('image/5.jpg')
 }
 
-.tile.drip-bg {
-  background-image: url('image/6.jpg')
+/* sản phẩm */
+.tile.im1-bg {
+  background-image: url('image/11.jpg')
 }
 
-.tile.building-bg {
-  background-image: url('image/7.jpg')
+.tile.im2-bg {
+  background-image: url('image/12.jpg')
 }
 
-.tile.energy-bg {
-  background-image: url('image/8.jpg')
+.tile.im3-bg {
+  background-image: url('image/13.jpg')
+}
+
+.tile.im4-bg {
+  background-image: url('image/14.jpg')
+}
+
+.tile.im5-bg {
+  background-image: url('image/15.jpg')
+}
+
+.tile.im6-bg {
+  background-image: url('image/16.jpg')
+}
+
+.tile.im7-bg {
+  background-image: url('image/17.jpg')
+}
+
+.tile.im8-bg {
+  background-image: url('image/18.jpg')
+}
+
+.tile.im9-bg {
+  background-image: url('image/19.jpg')
+}
+
+.tile.im10-bg {
+  background-image: url('image/20.jpg')
+}
+
+.tile.im11-bg {
+  background-image: url('image/21.jpg')
+}
+
+.tile.im12-bg {
+  background-image: url('image/22.jpg')
+}
+
+.tile.im13-bg {
+  background-image: url('image/23.jpg')
+}
+
+.tile.im14-bg {
+  background-image: url('image/24.jpg')
+}
+
+.tile.im15-bg {
+  background-image: url('image/25.jpg')
+}
+
+.tile.im16-bg {
+  background-image: url('image/26.jpg')
 }
 
 /* text overlays for tiles */
@@ -1168,21 +1235,36 @@ footer {
 
 /* Add before existing media queries */
 @media (max-width: 768px) {
+
   /* Layout & Typography */
-  .container { padding: 0 16px; }
-  h1 { font-size: 32px !important; }
-  h2 { font-size: 28px !important; }
-  
+  .container {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
   /* Header & Navigation */
-  .nav { padding: 10px 0; }
-  .menu { display: none; }
-  .hamb { 
+  .nav {
+    padding: 10px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamb {
     display: block;
     font-size: 24px;
     padding: 8px;
     cursor: pointer;
   }
-  
+
   /* Mobile menu */
   #mobileMenu {
     position: fixed;
@@ -1195,12 +1277,20 @@ footer {
     z-index: 100;
     overflow-y: auto;
   }
-  
+
   /* Hero section */
-  .hero { padding: 40px 0; }
-  .hero-actions { justify-content: center; }
-  .device-card { margin-top: 30px; }
-  
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .device-card {
+    margin-top: 30px;
+  }
+
   /* Grids & Cards */
   .grid-2,
   .grid-3,
@@ -1208,32 +1298,32 @@ footer {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .cards {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   /* Stats & Logos */
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .logos {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   /* Forms & Inputs */
   .input {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .input input,
   .input button {
     width: 100%;
   }
-  
+
   /* Footer */
   .fgrid {
     grid-template-columns: repeat(2, 1fr);
@@ -1242,35 +1332,46 @@ footer {
 }
 
 @media (max-width: 480px) {
+
   /* Typography */
-  body { font-size: 14px; }
-  h1 { font-size: 28px !important; }
-  h2 { font-size: 24px !important; }
-  
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
   /* Layout */
-  .container { 
+  .container {
     width: 100%;
     padding: 0 12px;
   }
-  
+
   /* Header */
-  .top-header-wrap { display: none; }
-  
+  .top-header-wrap {
+    display: none;
+  }
+
   /* Stats & Logos */
   .stats {
     grid-template-columns: 1fr;
   }
-  
+
   .logos {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   /* Footer */
   .fgrid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   /* CTA Band */
   .cta-band {
     padding: 20px;
@@ -1278,7 +1379,7 @@ footer {
     align-items: stretch;
     text-align: center;
   }
-  
+
   /* Fix touch targets */
   .btn,
   .nav a,
@@ -1357,7 +1458,7 @@ footer {
   }
 
   /* Stack các phần tử dọc */
-  .footer-bottom > div {
+  .footer-bottom>div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1404,14 +1505,15 @@ footer {
 
 /* Thêm divider giữa các phần */
 .footer-hours {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 10px 0;
   padding: 10px 0;
 }
 
 /* Add to existing media queries */
 @media (max-width: 768px) {
+
   /* Device card responsive */
   .device-card {
     width: 100%;
@@ -1420,7 +1522,8 @@ footer {
   }
 
   .device-screen {
-    aspect-ratio: 16/12; /* Tăng chiều cao một chút trên mobile */
+    aspect-ratio: 16/12;
+    /* Tăng chiều cao một chút trên mobile */
   }
 
   .status-row {
@@ -1435,12 +1538,13 @@ footer {
   }
 
   .chart {
-    height: 120px; /* Giảm chiều cao chart */
+    height: 120px;
+    /* Giảm chiều cao chart */
     margin: 6px 8px 10px;
   }
 
   /* Grid layout cho các tiles */
-  .device-screen > div:last-child {
+  .device-screen>div:last-child {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
@@ -1468,7 +1572,8 @@ footer {
   }
 
   .device-screen {
-    aspect-ratio: 16/14; /* Tăng thêm chiều cao trên mobile nhỏ */
+    aspect-ratio: 16/14;
+    /* Tăng thêm chiều cao trên mobile nhỏ */
   }
 
   .chart {
@@ -1476,7 +1581,7 @@ footer {
     margin: 4px 6px 8px;
   }
 
-  .device-screen > div:last-child {
+  .device-screen>div:last-child {
     gap: 6px;
     padding: 6px;
   }
@@ -1514,8 +1619,9 @@ footer {
     height: 90px;
   }
 
-  .device-screen > div:last-child {
-    grid-template-columns: repeat(2, 1fr); /* 2 cột trên màn hình rất nhỏ */
+  .device-screen>div:last-child {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột trên màn hình rất nhỏ */
   }
 
   .tile {
@@ -1524,31 +1630,36 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   /* Điều chỉnh vị trí nút trên mobile */
-  .nav > div {
-    margin-top: 8px; /* Thêm khoảng cách phía trên */
-    padding-bottom: 6px; /* Thêm padding dưới */
+  .nav>div {
+    margin-top: 8px;
+    /* Thêm khoảng cách phía trên */
+    padding-bottom: 6px;
+    /* Thêm padding dưới */
   }
 
-  .cta, 
+  .cta,
   .lang-select {
-    margin-top: 4px; /* Thêm khoảng cách giữa các nút */
+    margin-top: 4px;
+    /* Thêm khoảng cách giữa các nút */
   }
 }
 
 @media (max-width: 480px) {
-  .nav > div {
-    margin-top: 10px; /* Tăng khoảng cách trên màn hình nhỏ hơn */
+  .nav>div {
+    margin-top: 10px;
+    /* Tăng khoảng cách trên màn hình nhỏ hơn */
     padding-bottom: 8px;
   }
-  
+
   /* Tăng khoảng cách giữa các nút */
-  .nav > div {
+  .nav>div {
     gap: 12px;
   }
 
   /* Căn giữa các nút */
-  .nav > div {
+  .nav>div {
     justify-content: center;
   }
 }

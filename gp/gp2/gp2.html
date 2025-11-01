@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giải pháp IoT Nông nghiệp Thông minh | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./gp2.css" />
+  <script src="./gp2.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html" aria-label="Trang chủ">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com" title="Gửi email">
+          <i class="fa-solid fa-envelope"></i> musenplus2@gmail.com
+        </a>
+        <a href="tel:0338812063" title="Gọi hotline">
+          <i class="fa-solid fa-phone"></i> 0338812063
+        </a>
+
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-seedling"></i> Giải pháp IoT cho nông nghiệp thông minh</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-microchip"></i> Ra mắt cảm biến môi trường thế hệ mới</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-cloud"></i> Nền tảng Musen Cloud cập nhật dashboard 2025</a></div>
+          </div>
+        </div>
+
+        <a href="#" title="Đăng nhập"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu" aria-label="Chính">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG GIẢI PHÁP ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Giải pháp IoT Nông nghiệp Thông minh</h1>
+      <p class="lead">
+        Hệ sinh thái IoT giúp người nông dân quản lý, giám sát và tự động hoá sản xuất – từ cảm biến, gateway đến nền tảng đám mây.
+      </p>
+
+      <img class="product-img" src="../image/agri-iot-system.jpg" alt="Giải pháp IoT Nông nghiệp Thông minh" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Musen Plus – IoT Nông nghiệp Thông minh</strong> là giải pháp giúp quản lý toàn diện hệ thống canh tác, tưới tiêu và môi trường nhà màng. 
+        Hệ thống kết nối cảm biến, thiết bị điều khiển và nền tảng phân tích dữ liệu để nâng cao năng suất, tối ưu chi phí và bảo vệ tài nguyên.
+      </p>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Cảm biến môi trường:</strong> Đo nhiệt độ, độ ẩm không khí, độ ẩm đất, ánh sáng, pH, EC, lượng mưa, tốc độ gió.</li>
+        <li><strong>Gateway AI Box Plus:</strong> Thu thập dữ liệu qua RS485/LoRa/NB-IoT/Wi-Fi, đồng bộ với cloud.</li>
+        <li><strong>Hệ thống điều khiển:</strong> Bật/tắt bơm, quạt, màn che, van tưới – tự động hoặc theo lịch.</li>
+        <li><strong>Musen Cloud:</strong> Nền tảng trực tuyến theo dõi dữ liệu, thống kê, cảnh báo và báo cáo.</li>
+      </ul>
+
+      <h3>Tính năng nổi bật</h3>
+      <ul>
+        <li>Giám sát môi trường trồng trọt theo thời gian thực</li>
+        <li>Tự động tưới tiêu dựa trên độ ẩm đất và lịch canh tác</li>
+        <li>Cảnh báo nhiệt độ, độ ẩm, ánh sáng vượt ngưỡng</li>
+        <li>Quản lý khu vực trồng, nhà màng, hệ thống bơm, đèn, quạt</li>
+        <li>Tích hợp AI phân tích xu hướng sinh trưởng cây trồng</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật chính</h3>
+      <ul>
+        <li>Gateway: ESP32-S3, 16MB PSRAM, hỗ trợ LoRa/NB-IoT/Wi-Fi/Ethernet</li>
+        <li>Nguồn: 9–36VDC, chống nước IP65, hoạt động ngoài trời</li>
+        <li>Cảm biến: nhiệt độ, độ ẩm, pH, EC, ánh sáng, gió, mưa</li>
+        <li>Kết nối Cloud qua MQTT, HTTPS, OTA cập nhật từ xa</li>
+        <li>Phần mềm Musen Cloud & Ứng dụng di động đi kèm</li>
+      </ul>
+
+      <h3>Lợi ích cho người dùng</h3>
+      <ul>
+        <li>Tăng năng suất cây trồng và giảm chi phí vận hành</li>
+        <li>Phát hiện sớm điều kiện bất thường trong môi trường</li>
+        <li>Tự động hóa quá trình tưới tiêu và điều khiển vi khí hậu</li>
+        <li>Giám sát từ xa, giảm nhân công và rủi ro</li>
+        <li>Tích hợp báo cáo và lịch sử dữ liệu nông trại</li>
+      </ul>
+
+      <h3>Ứng dụng</h3>
+      <ul>
+        <li>Nhà kính, nhà màng, nông trại rau – hoa – dưa lưới</li>
+        <li>Hệ thống tưới nhỏ giọt, tưới phun mưa tự động</li>
+        <li>Chăn nuôi thông minh (nhiệt độ, độ ẩm chuồng trại)</li>
+        <li>Nông nghiệp công nghệ cao, canh tác chính xác (Precision Farming)</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn muốn xây dựng nông trại thông minh?</h4>
+          <p class="muted">Liên hệ với Musen Plus để được tư vấn giải pháp phù hợp.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT toàn diện cho nông nghiệp, từ cảm biến đến nền tảng dữ liệu. Giúp nông dân hiện đại hóa quy trình sản xuất.</p>
+      </div>
+      <div>
+        <h4>Giải pháp nông nghiệp</h4>
+        <ul>
+          <li>Giám sát nhà màng IoT</li>
+          <li>Tưới tiêu tự động thông minh</li>
+          <li>Phân tích dữ liệu cây trồng</li>
+          <li>Quản lý trang trại qua ứng dụng di động</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ IoT</h4>
+        <ul>
+          <li>Gateway AI Box Plus</li>
+          <li>LoRa / NB-IoT / MQTT</li>
+          <li>Musen Cloud & Dashboard</li>
+          <li>OTA – Cập nhật từ xa</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT cho Nông nghiệp Thông minh.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

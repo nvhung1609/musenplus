@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hệ thống giám sát môi trường thông minh | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./dv4.css" />
+  <script src="./dv4.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html" aria-label="Trang chủ">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> musenplus2@gmail.com</a>
+        <a href="tel:0338812063"><i class="fa-solid fa-phone"></i> 0338812063</a>
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)"><i class="fa-solid fa-bell"></i>
+            <span class="notifications-length">3</span></a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-wind"></i> Ra mắt hệ thống giám sát môi trường thông minh</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-cloud-sun"></i> Cảm biến chất lượng không khí thế hệ mới</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-tower-broadcast"></i> Musen Cloud cập nhật dữ liệu khí tượng toàn quốc</a></div>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu" aria-label="Chính">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG CHÍNH ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Hệ thống giám sát môi trường thông minh</h1>
+      <p class="lead">
+        Giải pháp IoT giúp giám sát chất lượng không khí, tiếng ồn, khí thải và thời tiết – dữ liệu được hiển thị trực quan trên nền tảng Musen Cloud.
+      </p>
+
+      <img class="product-img" src="../image/smart-environment-iot.jpg" alt="Hệ thống giám sát môi trường IoT" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Smart Environment IoT</strong> là giải pháp toàn diện của Musen Plus, cho phép theo dõi các chỉ số môi trường quan trọng như PM2.5, CO₂, VOC, độ ẩm, nhiệt độ, ánh sáng, tiếng ồn và lượng mưa.
+        Hệ thống cung cấp cảnh báo sớm, hỗ trợ phân tích xu hướng ô nhiễm và cung cấp dữ liệu chính xác phục vụ quy hoạch đô thị, sản xuất và nông nghiệp.
+      </p>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Trạm cảm biến môi trường:</strong> Cảm biến khí, bụi, âm thanh, ánh sáng, nhiệt độ, độ ẩm, mưa, gió.</li>
+        <li><strong>Gateway AI Box Plus:</strong> Thu thập dữ liệu qua RS485/LoRa/NB-IoT, đồng bộ về cloud qua MQTT hoặc HTTPS.</li>
+        <li><strong>Musen Cloud:</strong> Nền tảng hiển thị dữ liệu, cảnh báo theo ngưỡng và bản đồ trực quan.</li>
+        <li><strong>Ứng dụng di động:</strong> Truy cập, giám sát, nhận thông báo mọi lúc mọi nơi.</li>
+      </ul>
+
+      <h3>Tính năng nổi bật</h3>
+      <ul>
+        <li>Giám sát chất lượng không khí theo thời gian thực (PM2.5, PM10, CO₂, VOC...)</li>
+        <li>Đo nhiệt độ, độ ẩm, áp suất, tiếng ồn và ánh sáng</li>
+        <li>Cảnh báo khi chỉ số vượt ngưỡng an toàn</li>
+        <li>Phân tích dữ liệu bằng AI – dự đoán xu hướng ô nhiễm</li>
+        <li>Hiển thị bản đồ khu vực và biểu đồ lịch sử</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>Gateway: ESP32-S3, 16MB PSRAM, hỗ trợ LoRa / NB-IoT / Wi-Fi / Ethernet</li>
+        <li>Cảm biến PM2.5 (0–1000 µg/m³), CO₂ (400–5000 ppm), VOC, âm thanh, ánh sáng</li>
+        <li>Nguồn: DC 9–36V, IP65 chống nước, hoạt động 24/7</li>
+        <li>Kết nối dữ liệu: MQTT / HTTP / HTTPS / OTA</li>
+        <li>Tích hợp cloud API và dashboard quản lý</li>
+      </ul>
+
+      <h3>Ứng dụng thực tế</h3>
+      <ul>
+        <li>Thành phố thông minh – Smart City</li>
+        <li>Khu công nghiệp, nhà máy, khu chế xuất</li>
+        <li>Trường học, bệnh viện, trung tâm thương mại</li>
+        <li>Nông nghiệp công nghệ cao, giám sát khí hậu nhà màng</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Giúp cơ quan quản lý và doanh nghiệp theo dõi chất lượng không khí chính xác</li>
+        <li>Hỗ trợ cảnh báo và phản ứng sớm với các chỉ số nguy hại</li>
+        <li>Tăng tính minh bạch dữ liệu môi trường đô thị</li>
+        <li>Giúp người dân và doanh nghiệp chủ động bảo vệ sức khỏe</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn cần giải pháp giám sát môi trường?</h4>
+          <p class="muted">Liên hệ Musen Plus để được tư vấn và triển khai hệ thống phù hợp.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT toàn diện cho giám sát môi trường, năng lượng và sản xuất – an toàn, chính xác, thông minh.</p>
+      </div>
+      <div>
+        <h4>Ứng dụng</h4>
+        <ul>
+          <li>Thành phố thông minh</li>
+          <li>Khu công nghiệp</li>
+          <li>Hệ thống cảnh báo khí tượng</li>
+          <li>Nông nghiệp công nghệ cao</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ</h4>
+        <ul>
+          <li>Gateway AI Box Plus</li>
+          <li>LoRa / NB-IoT / MQTT</li>
+          <li>Musen Cloud Dashboard</li>
+          <li>AI Phân tích dữ liệu môi trường</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Giải pháp giám sát môi trường IoT.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

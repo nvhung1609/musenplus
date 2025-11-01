@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giải pháp IoT nhà thông minh | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./sp8.css" />
+  <script src="./sp8.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> musenplus2@gmail.com</a>
+        <a href="tel:0338812063"><i class="fa-solid fa-phone"></i> 0338812063</a>
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)">
+            <i class="fa-solid fa-bell"></i><span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-house-signal"></i> Ra mắt hệ thống nhà thông minh Musen Plus</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-lightbulb"></i> Công tắc cảm ứng & chiếu sáng thông minh</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-lock"></i> Ứng dụng quản lý cửa thông minh trên cloud</a></div>
+          </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG CHÍNH ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Giải pháp IoT nhà thông minh</h1>
+      <p class="lead">
+        Hệ thống điều khiển, giám sát và tự động hóa toàn bộ ngôi nhà – an toàn, tiện nghi và tiết kiệm năng lượng.
+      </p>
+
+      <img class="product-img" src="../image/smart-home-iot.jpg" alt="Giải pháp IoT nhà thông minh" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Smart Home IoT</strong> của Musen Plus cho phép người dùng điều khiển và giám sát toàn bộ thiết bị trong nhà thông qua ứng dụng hoặc giọng nói. 
+        Từ đèn, cửa, rèm, điều hòa, đến cảm biến an ninh, tất cả được kết nối vào cùng một hệ thống thông minh và hoạt động mượt mà trên nền tảng cloud.
+      </p>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Gateway trung tâm:</strong> AI Box Plus kết nối Zigbee/Wi-Fi, xử lý tự động và gửi dữ liệu lên cloud.</li>
+        <li><strong>Cảm biến thông minh:</strong> Chuyển động, cửa, nhiệt độ, độ ẩm, rò gas, khói.</li>
+        <li><strong>Thiết bị điều khiển:</strong> Công tắc cảm ứng, ổ cắm thông minh, đèn, rèm, cửa cuốn, điều hòa.</li>
+        <li><strong>Ứng dụng Musen Home:</strong> Điều khiển từ xa, theo dõi trạng thái và nhận cảnh báo tức thì.</li>
+      </ul>
+
+      <h3>Tính năng nổi bật</h3>
+      <ul>
+        <li>Điều khiển đèn, điều hòa, rèm cửa, quạt… mọi lúc mọi nơi</li>
+        <li>Tự động hóa ngữ cảnh: “Ra khỏi nhà”, “Trở về”, “Buổi tối”, “Ngủ”</li>
+        <li>Cảnh báo xâm nhập, rò gas, khói, nhiệt độ cao</li>
+        <li>Hỗ trợ điều khiển giọng nói (Google Assistant, Alexa, Musen Voice)</li>
+        <li>Đồng bộ dữ liệu qua Musen Cloud, hoạt động 24/7</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>Gateway: ESP32-S3, hỗ trợ Zigbee, Wi-Fi, Bluetooth, MQTT</li>
+        <li>Nguồn: 5V–24V DC, IP40, standby < 1W</li>
+        <li>Cảm biến PIR, Gas, Smoke, DHT22, cửa từ, relay điều khiển</li>
+        <li>Giao thức: MQTT / HTTP / Zigbee / OTA</li>
+        <li>Ứng dụng: Android, iOS, Web</li>
+      </ul>
+
+      <h3>Ứng dụng thực tế</h3>
+      <ul>
+        <li>Nhà ở, biệt thự, chung cư, căn hộ thông minh</li>
+        <li>Homestay, khách sạn mini, resort</li>
+        <li>Văn phòng thông minh</li>
+        <li>Cửa hàng, quán cà phê, khu nghỉ dưỡng</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Tiết kiệm đến 25% điện năng mỗi tháng</li>
+        <li>Tăng tiện nghi và an toàn cho người dùng</li>
+        <li>Dễ dàng mở rộng và tích hợp thiết bị mới</li>
+        <li>Tối ưu hóa quản lý và nâng cao giá trị ngôi nhà</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn muốn nâng cấp ngôi nhà của mình?</h4>
+          <p class="muted">Liên hệ Musen Plus để được tư vấn giải pháp nhà thông minh IoT phù hợp.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp nhà thông minh IoT – điều khiển, giám sát và tự động hóa không gian sống hiện đại.</p>
+      </div>
+      <div>
+        <h4>Ứng dụng</h4>
+        <ul>
+          <li>Chiếu sáng thông minh</li>
+          <li>Điều hòa & rèm tự động</li>
+          <li>An ninh & cảnh báo</li>
+          <li>Quản lý năng lượng</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ</h4>
+        <ul>
+          <li>Gateway AI Box Plus</li>
+          <li>Zigbee / MQTT / Wi-Fi</li>
+          <li>Musen Cloud Dashboard</li>
+          <li>Musen Home App</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Giải pháp IoT nhà thông minh.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

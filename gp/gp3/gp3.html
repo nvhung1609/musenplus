@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hệ thống giám sát năng lượng thông minh | MUSEN PLUS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./gp3.css" />
+  <script src="./gp3.js" defer></script>
+</head>
+<body>
+  <!-- ========== TOP HEADER ========== -->
+  <div class="top-header-wrap">
+    <div class="container">
+      <div class="top-header-logo">
+        <a class="logo" href="../index.html" aria-label="Trang chủ">
+          <img class="logo-mark" src="../image/logo.png" alt="MUSEN PLUS IoT" />
+          <span>MUSEN PLUS IoT</span>
+        </a>
+      </div>
+
+      <div class="top-header-menu">
+        <a href="mailto:musenplus2@gmail.com" title="Gửi email">
+          <i class="fa-solid fa-envelope"></i> musenplus2@gmail.com
+        </a>
+        <a href="tel:0338812063" title="Gọi hotline">
+          <i class="fa-solid fa-phone"></i> 0338812063
+        </a>
+
+        <div class="notifications">
+          <a class="dropdown-toggle" href="#" onclick="toggleNotifications(event)" title="Thông báo">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notifications-length">3</span>
+          </a>
+          <div class="dropdown-menu" id="notificationsDropdown">
+            <div class="dropdown-header"><strong>Tin tức & Cập nhật IoT</strong></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-bolt"></i> Giải pháp giám sát năng lượng thông minh</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-microchip"></i> Gateway AI Box Plus thế hệ mới</a></div>
+            <div class="notifications-item"><a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard năng lượng 2025 trên Musen Cloud</a></div>
+          </div>
+        </div>
+
+        <a href="#" title="Đăng nhập"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header id="mainHeader">
+    <div class="container nav">
+      <nav class="menu" aria-label="Chính">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html#dich-vu">Dịch vụ</a>
+        <a href="../index.html#giai-phap">Giải pháp</a>
+        <a href="../index.html#san-pham">Sản phẩm</a>
+        <a href="../index.html#du-an">Dự án</a>
+        <a href="#">Website</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cta" onclick="window.location.href='../index.html#lien-he'">Liên hệ</button>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span>VN VN</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="lang-dd">
+            <button data-lang="vi">VN VN</button>
+            <button data-lang="en">EN US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NỘI DUNG ========== -->
+  <main>
+    <section class="container product fade-up">
+      <h1>Hệ thống giám sát năng lượng thông minh</h1>
+      <p class="lead">
+        Giải pháp IoT cho phép doanh nghiệp theo dõi, phân tích và tối ưu hoá việc sử dụng điện năng theo thời gian thực.
+      </p>
+
+      <img class="product-img" src="../image/smart-energy-iot.jpg" alt="Hệ thống giám sát năng lượng IoT" />
+
+      <h3>Tổng quan</h3>
+      <p>
+        <strong>Smart Energy IoT</strong> của Musen Plus là giải pháp giám sát năng lượng toàn diện, 
+        giúp doanh nghiệp quản lý mức tiêu thụ điện, phát hiện bất thường và tăng hiệu quả vận hành.
+        Dữ liệu được thu thập từ cảm biến đo điện và truyền về nền tảng đám mây để phân tích, trực quan hóa và cảnh báo tức thời.
+      </p>
+
+      <h3>Thành phần hệ thống</h3>
+      <ul>
+        <li><strong>Cảm biến năng lượng:</strong> Đo điện áp, dòng, công suất, hệ số PF, điện năng tiêu thụ.</li>
+        <li><strong>Gateway AI Box Plus:</strong> Thu thập dữ liệu qua RS485/Modbus, kết nối MQTT/HTTP với cloud.</li>
+        <li><strong>Musen Cloud:</strong> Giao diện dashboard trực quan hiển thị thông tin và cảnh báo theo thời gian thực.</li>
+        <li><strong>Ứng dụng di động:</strong> Theo dõi dữ liệu năng lượng mọi lúc, mọi nơi.</li>
+      </ul>
+
+      <h3>Tính năng nổi bật</h3>
+      <ul>
+        <li>Giám sát điện năng theo khu vực, dây chuyền hoặc thiết bị</li>
+        <li>Cảnh báo tức thời khi có sự cố hoặc quá tải</li>
+        <li>Phân tích hiệu suất năng lượng theo thời gian</li>
+        <li>Báo cáo tự động, hỗ trợ tiêu chuẩn ISO 50001</li>
+        <li>Dự đoán xu hướng tiêu thụ bằng mô hình AI</li>
+      </ul>
+
+      <h3>Thông số kỹ thuật</h3>
+      <ul>
+        <li>Gateway: ESP32-S3, hỗ trợ Modbus RTU/TCP, MQTT, Ethernet</li>
+        <li>Cảm biến đo năng lượng chính xác cao Class 0.5</li>
+        <li>Kết nối: Wi-Fi, 4G LTE, Ethernet</li>
+        <li>Giao thức: MQTT / HTTP / HTTPS / OTA</li>
+        <li>Nguồn: DC 9–36V, tiêu thụ thấp</li>
+        <li>Chống nước, chống bụi chuẩn IP65</li>
+      </ul>
+
+      <h3>Ứng dụng thực tế</h3>
+      <ul>
+        <li>Nhà máy, khu công nghiệp, trung tâm thương mại</li>
+        <li>Toà nhà văn phòng, khu dân cư, bệnh viện</li>
+        <li>Trạm điện mặt trời, hệ thống năng lượng tái tạo</li>
+        <li>Giám sát máy móc, trạm bơm, hệ thống HVAC</li>
+      </ul>
+
+      <h3>Lợi ích</h3>
+      <ul>
+        <li>Giảm 15–30% chi phí điện năng nhờ theo dõi chính xác</li>
+        <li>Tăng độ ổn định và tuổi thọ thiết bị</li>
+        <li>Tự động hóa giám sát và cảnh báo 24/7</li>
+        <li>Hỗ trợ chuyển đổi số năng lượng toàn diện</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ========== FORM TƯ VẤN ========== -->
+  <section id="lien-he">
+    <div class="container">
+      <div class="cta-band fade-up">
+        <div class="cta-desc">
+          <h4>Bạn muốn tối ưu chi phí năng lượng?</h4>
+          <p class="muted">Liên hệ Musen Plus để nhận tư vấn giải pháp giám sát năng lượng thông minh.</p>
+        </div>
+        <form class="cta-form" onsubmit="return submitLead(event)">
+          <input type="text" placeholder="Họ tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại (tuỳ chọn)" />
+          <button class="cta" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <h4>MUSEN PLUS</h4>
+        <p>Giải pháp IoT toàn diện – từ thiết bị đo, gateway đến nền tảng cloud, phục vụ công nghiệp, năng lượng và quản lý hạ tầng.</p>
+      </div>
+      <div>
+        <h4>Giải pháp năng lượng</h4>
+        <ul>
+          <li>Giám sát điện năng thông minh</li>
+          <li>Phân tích hiệu suất tiêu thụ</li>
+          <li>Cảnh báo sự cố năng lượng</li>
+          <li>Điện mặt trời & năng lượng tái tạo</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Công nghệ</h4>
+        <ul>
+          <li>Gateway AI Box Plus</li>
+          <li>Musen Cloud Dashboard</li>
+          <li>Modbus / MQTT / OTA</li>
+          <li>ESP32-S3 & Edge AI</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>51/6/6 Nguyễn Văn Giáp, P. Bình Trưng Đông, TP. Thủ Đức</li>
+          <li>Email: musenplus2@gmail.com</li>
+          <li>Hotline: 0338 812 063</li>
+          <li>Thời gian: Thứ 2 – Thứ 7 (8.30–18.30)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="y"></span> MUSEN PLUS – Hệ thống giám sát năng lượng IoT.</p>
+      <div class="footer-contact">
+        <a href="mailto:musenplus2@gmail.com"><i class="fa-solid fa-envelope"></i> Email: musenplus2@gmail.com</a>
+        <a href="tel:+84338812063"><i class="fa-solid fa-phone"></i> Hotline: +84 338 812 063</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
